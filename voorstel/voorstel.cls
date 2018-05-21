@@ -198,7 +198,6 @@ justification=raggedright]{caption}
 \newcommand{\JournalInfo}[1]{\def\@JournalInfo{#1}}
 \newcommand{\Abstract}[1]{\def\@Abstract{#1}}
 \newcommand{\Keywords}[1]{\def\@Keywords{#1}}
-\newcommand{\CoPromotor}[1]{\def\@CoPromotor{#1}}
 
 % ---------------------------------------------------------------------
 \setlength{\columnsep}{0.55cm} % Distance between the two columns of text
@@ -219,14 +218,11 @@ justification=raggedright]{caption}
 \parbox{\textwidth-2\fboxsep-2\fboxrule}{\centering%
 \colorbox{color2!10}{%
 \parbox{\textwidth-4\fboxsep-2\fboxrule}{%
-\sffamily\textbf{\abstractname}\\\@Abstract%
 \ifx\@Keywords\@empty%
+\sffamily\textbf{\abstractname}\\\@Abstract%
 \else%
-\\[4pt]\textbf{\keywordname}\\\@Keywords%
-\fi%
-\ifx\@CoPromotor\@empty%
-\else%
-\\[4pt]\textbf{Co-promotor}\\\@CoPromotor%
+\sffamily\textbf{\abstractname}\\\@Abstract\\[4pt]%
+\textbf{\keywordname}\\\@Keywords%
 \fi%
 }%
 }%
@@ -247,5 +243,5 @@ justification=raggedright]{caption}
 
 \RequirePackage[backend=biber,style=apa]{biblatex}
 \DeclareLanguageMapping{dutch}{dutch-apa}
-\addbibresource{voorstel.bib}
+\addbibresource{biblio.bib}
 

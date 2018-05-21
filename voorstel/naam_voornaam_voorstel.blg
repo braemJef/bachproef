@@ -1,0 +1,15 @@
+[0] Config.pm:354> INFO - This is Biber 2.7
+[0] Config.pm:357> INFO - Logfile is 'naam_voornaam_voorstel.blg'
+[42] biber-darwin:303> INFO - === Mon May 21, 2018, 15:53:25
+[69] Biber.pm:359> INFO - Reading 'naam_voornaam_voorstel.bcf'
+[175] Biber.pm:835> INFO - Found 1 citekeys in bib section 0
+[191] Biber.pm:3670> INFO - Processing section 0
+[206] Biber.pm:3840> INFO - Looking for bibtex format file 'biblio.bib' for section 0
+[208] bibtex.pm:1435> INFO - Decoding LaTeX character macros into UTF-8
+[213] bibtex.pm:1292> INFO - Found BibTeX data source 'biblio.bib'
+[228] UCollate.pm:68> INFO - Overriding locale 'nl-NL' defaults 'variable = shifted' with 'variable = non-ignorable'
+[228] UCollate.pm:68> INFO - Overriding locale 'nl-NL' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[228] Biber.pm:3499> INFO - Sorting list 'apa/global/' of type 'entry' with scheme 'apa' and locale 'nl-NL'
+[228] Biber.pm:3505> INFO - No sort tailoring available for locale 'nl-NL'
+[231] bbl.pm:608> INFO - Writing 'naam_voornaam_voorstel.bbl' with encoding 'UTF-8'
+[231] bbl.pm:712> INFO - Output to naam_voornaam_voorstel.bbl

@@ -1,0 +1,12 @@
+[0] Config.pm:354> INFO - This is Biber 2.7
+[0] Config.pm:357> INFO - Logfile is 'bachproef-tin.blg'
+[45] biber-darwin:303> INFO - === Mon May 21, 2018, 15:57:20
+[73] Biber.pm:359> INFO - Reading 'bachproef-tin.bcf'
+[202] Biber.pm:835> INFO - Found 4 citekeys in bib section 0
+[217] Biber.pm:3670> INFO - Processing section 0
+[232] Biber.pm:3840> INFO - Looking for bibtex format file 'bachproef-tin.bib' for section 0
+[234] bibtex.pm:1435> INFO - Decoding LaTeX character macros into UTF-8
+[239] bibtex.pm:1292> INFO - Found BibTeX data source 'bachproef-tin.bib'
+[245] Biber.pm:3840> INFO - Looking for bibtex format file '../voorstel/voorstel.bib' for section 0
+[398] Utils.pm:180> ERROR - Cannot find '../voorstel/voorstel.bib'!
+[398] Biber.pm:113> INFO - ERRORS: 1

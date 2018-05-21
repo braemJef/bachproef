@@ -1,0 +1,47 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.8 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \sortlist[entry]{apa/global/}
+    \entry{javascriptframework}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=1c413f69a1bf47b2908ea9efb65c4c95}{%
+           family={Buckler},
+           familyi={B\bibinitperiod},
+           given={Craig},
+           giveni={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{1c413f69a1bf47b2908ea9efb65c4c95}
+      \strng{fullhash}{1c413f69a1bf47b2908ea9efb65c4c95}
+      \strng{authornamehash}{1c413f69a1bf47b2908ea9efb65c4c95}
+      \strng{authorfullhash}{1c413f69a1bf47b2908ea9efb65c4c95}
+      \field{sortinit}{B}
+      \field{sortinithash}{5f6fa000f686ee5b41be67ba6ff7962d}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{https://www.sitepoint.com/top-javascript-frameworks-libraries-tools-use/}
+      \field{title}{Top JavaScript frameworks, libraries and tools to use in 2017}
+      \field{year}{2017}
+    \endentry
+  \endsortlist
+\endrefsection
+\endinput
+
