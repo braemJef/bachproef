@@ -7,10 +7,85 @@
 
 % Pas na deze inleidende paragraaf komt de eerste sectiehoofding.
 
-Dit hoofdstuk bevat je literatuurstudie. De inhoud gaat verder op de inleiding, maar zal het onderwerp van de bachelorproef *diepgaand* uitspitten. De bedoeling is dat de lezer na lezing van dit hoofdstuk helemaal op de hoogte is van de huidige stand van zaken (state-of-the-art) in het onderzoeksdomein. Iemand die niet vertrouwd is met het onderwerp, weet er nu voldoende om de rest van het verhaal te kunnen volgen, zonder dat die er nog andere informatie moet over opzoeken \autocite{Pollefliet2011}.
+\section{JavaScript}
+\label{sec:JavaScript}
 
-Je verwijst bij elke bewering die je doet, vakterm die je introduceert, enz. naar je bronnen. In \LaTeX{} kan dat met het commando \texttt{$\backslash${textcite\{\}}} of \texttt{$\backslash${autocite\{\}}}. Als argument van het commando geef je de ``sleutel'' van een ``record'' in een bibliografische databank in het Bib\TeX{}-formaat (een tekstbestand). Als je expliciet naar de auteur verwijst in de zin, gebruik je \texttt{$\backslash${}textcite\{\}}.
-Soms wil je de auteur niet expliciet vernoemen, dan gebruik je \texttt{$\backslash${}autocite\{\}}. In de volgende paragraaf een voorbeeld van elk.
+In dit onderdeel zal ten eerste de historiek van JavaScript beschreven worden. Hierna zullen de eigenschappen van JavaScript ten opzichte van andere programmeer talen besproken worden. 
 
-\textcite{Knuth1998} schreef een van de standaardwerken over sorteer- en zoekalgoritmen. Experten zijn het erover eens dat cloud computing een interessante opportuniteit vormen, zowel voor gebruikers als voor dienstverleners op vlak van informatietechnologie~\autocite{Creeger2009}.
+\subsection{Historiek}
+\label{sec:JavaScript_Historiek}
+
+JavaScript is uitgevonden in 1995 bij Netscape Communications. Zij hebben ook de Netscape browser gemaakt. In die tijd was Java de populaire taal voor het web. Hierdoor hebben ze besloten om de syntax van JavaScript op die van Java te baseren. De eerste versie van JavaScript was onder de naam Mocha in 1995. Hierna werd deze hernoemd naar LiveScript. Ten slotte werd de taal verandert naar JavaScript eind 1995.JavaScript is gestandaardiseerd bij ECMA International. Deze gestandaardiseerde versie van JavaScript noemen we ECMAScript. Deze gedraagt zich hetzelfde in alle applicaties die deze standaard accepteren.
+
+\subsection{Eigenschappen}
+\label{sec:JavaScript_Eigenschappen}
+
+Het is een object georiënteerde en dynamisch getypeerde scripttaal die gebruikt word om webpagina’s interactief te maken. Deze bevat een standaard bibliotheek van objecten zoals Array, Date en Math. Deze kunnen dan gebruikt worden om de browser en zijn Document Object Model te besturen. Javascript kan HTML elementen plaatsen en/of verwijderen, reageren op events zoals muisclicks, een formulier indienen en navigeren naar een andere pagina.
+
+JavaScript en Java zijn te vergelijken op sommige vlakken maar ook heel verschillend. JavaScript lijkt op Java omdat het dezelfde uitdrukking syntaxis gebruikt. Dit is de wijze waarop een combinatie van waarden, variabelen, operatoren en functies kan worden uitgedrukt. De verschillen worden vervolgens besproken.
+
+Javascript is een dynamisch getypeerde taal. Dit betekend dat het type van een variabele nog niet gekend is bij de compileer tijd. JavaScript ondersteunt een runtime system dat een klein aantal data types ondersteunt. Deze zijn number, boolean en string. Hierdoor kan tijd bespaard worden bij het maken van een project. Elke variabele word gedeclareerd door var, let of const. Een groot nadeel van zo’n dynamisch getypeerde taal is dat je door typfouten bugs kan maken die zeer moeilijk op te sporen zijn. Daartegenover is Java een statisch getypeerde taal. Dit betekend dat bij Java alle types gekend zijn bij compileer tijd. Het voordeel hiervan is dat er een heleboel checks kunnen gedaan worden door de compiler, hierdoor komen veel triviale bugs niet voor.
+
+JavaScript bied meer vrijheid ten opzichte van Java. Je moet niet elke variabele, klasse of methode declareren. Methodes kunnen niet publiek, privaat of beschermd zijn. Er is ook geen nood om interfaces te implementeren. Parameters en functie retourneerwaarden zijn ook niet expliciet getypeerd. Dit kan veel tijd besparen maar ook voor moeilijk te vinden bugs zorgen.
+
+Java is klasse gebaseerd, objecten zijn onderverdeeld in klassen en instanties. Er bestaat en vaste hiërarchie door de klassen heen. Klassen en instanties kunnen niet dynamisch attributen of methoden toegevoegd krijgen. Anderzijds is JavaScript object georiënteerd. Dit betekent dat er geen verschil gemaakt word tussen types van objecten. Overerving is door middel van het prototype systeem. Attributen en methoden kunnen dynamisch aan objecten worden toegevoegd \autocite{Introduction_2018}.
+
+\section{Frameworks}
+\label{sec:Frameworks}
+
+In dit onderdeel zal ik het uitgebreid hebben over wat een framework is en de componenten waaruit een framework bestaat.
+
+Een software framework is een set methodes en klassen die ontworpen zijn om het werk van een developer te vereenvoudigen. Het is een abstractie van veel kleine componenten die herbruikbaar zijn waardoor veel tijd gespaard kan worden. Een framework legt ook meestal een bepaalde structuur op bij de developer om de code te implementeren. Dit is goed voor consistente code en zorgt voor minder bugs. Er zijn meerdere onderdelen waaruit een framework kan bestaan en deze worden nader besproken \autocite{clifton_what_2003} \autocite{eskelin_software_2001}.
+
+\subparagraph{Wrapper functie}
+\label{sec:Frameworks_Wrapper_Functie}
+Een wrapper is een methode om één of meerdere functies te versimpelen, consistentie te geven en/of functionaliteit toevoegen. Een wrapper past het bestaande gedrag aan en zal de functionaliteit niet compleet veranderen.
+
+\subparagraph{Architecturen}
+\label{sec:Frameworks_Architecturen}
+Een architectuur is een stijl dat specifieke ontwerp patronen gebruikt. Een framework heeft een patroon nodig. Meestal ondersteund een framework het gebruik van meerdere ontwerp patronen. Dit patroon zorgt ervoor dat je een herbruikbare structuur maakt in je project. Eenmaal je een patroon gebruikt is het (bijna) onmogelijk om hier van af te stappen of je moet een grote refactor doen van je hele project.
+
+\subparagraph{Methodologie}
+\label{sec:Frameworks_Methodologie}
+Een methodologie is de manier waarop iets gedaan kan worden. De methodologie is hoe de interactie tussen dingen gebeurt. Hoe objecten met elkaar kunnen communiceren, hoe met persistentie aanneemt of hoe er gereageerd kan worden op user events.
+
+\section{Benchmarking}
+\label{sec:Benchmarking}
+
+In dit deel zal de term benchmarking verder uitgelegd worden, wat er onder deze term verstaan word en wat deze proef ermee wil bereiken. Benchmarking heeft verschillende betekenissen volgens het Engelse woordenboek \textcite{_benchmark_????}, enkele zijn hier opgesomd.
+
+“De kwaliteit van iets meten door het te vergelijken met de geaccepteerde standaard.”
+
+“Een standaard om iets te meten of over iets te oordelen van hetzelfde type.”
+
+“Een bepaalde grens van kwaliteit dat kan gebruikt worden als standaard om andere dingen mee te vergelijken.”
+
+Benchmarking is een belangrijk onderdeel van de informatica wereld. Het word overal gebruikt van hardware benchmarks tot database performance benchmarks. Benchmarking tools zijn meestal één of meerdere programma’s die de performance van een applicatie meten onder bepaalde condities. Het doel van zo’n benchmark is om een eerlijke vergelijking te maken tussen verschillende dingen. In deze proef zullen er benchmarks gebruikt worden om de performance van JavaScript frameworks te vergelijken.
+
+
+\section{MVC}
+\label{sec:MVC}
+
+Om de tests in deze proef zo gelijk mogelijk te laten verlopen zal elke applicatie het MVC (Model View Controller) ontwerp patroon zo goed mogelijk proberen hanteren. In dit onderdeel zal ik de basis van het Model-View-Controller patroon beschrijven.
+
+Het Model View Controller patroon is een software architectuur stijl of ontwerp patroon gebruikt voor seperation of concerns. Alle business logica zal zich bevinden in de Controller. Dit is gescheiden van de View. De data die weergegeven wordt bevind zich in een Model. Het patroon beheert de fundamentele werking en data van de applicatie. Het kan reageren voor requests voor informatie, antwoorden met instructies om de state aan te passen en zelfs observers waarschuwen in event-driven systemen. Naast het MVC patroon zijn er meerdere ontwerp patronen ontwikkeld zoals MVVM (model-view-view-model), MVP (model-view-presenter), MVA (model-view-adapter) en nog veel meer. Deze zullen we niet bespreken in deze proef. Het MVC patroon was veel populairder ten opzichte van deze patronen. Verder zullen we de onderdelen van MVC nog kort bespreken \autocite{atwood_understanding_2008} \autocite{_model-view-controller_2014}.
+
+\subparagraph{Model}
+\label{sec:MVC_Model}
+Ten eerste zal het model besproken worden. Het model definieert de vorm van de data die de applicatie gebruikt. Een model kan een object zijn maar kan ook uit meerdere objecten bestaan. Het model en wat de gebruiker waarneemt hebben meestal een één-op-één relatie. Een model is dus blind, dit betekend dat de model enkel instaat voor de data bij te houden wat er verder met de data gebeurd weet de model niets van. De daadwerkelijke opslag van data wordt door een database gedaan.
+
+\subparagraph{View}
+\label{sec:MVC_View}
+Informatie wordt weergegeven aan de gebruiker via de view. De view doet geen bewerkingen of berekeningen en dient enkel en alleen om data weer te geven. De user kan op de view bepaalde componenten aanklikken dat events kan triggeren. Deze kunnen doorgezonden worden naar de controller.
+
+\subparagraph{Controller}
+\label{sec:MVC_Controller}
+De controller kan events opvangen en hierop reageren. Meestal worden er dan bewerkingen uitgevoerd op waarden uit de model. De model word dan aangepast en hierdoor zal de view dan weer geupdate worden.
+
+
+
+
+
+
+
 

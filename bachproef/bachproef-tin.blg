@@ -1,12 +1,20 @@
 [0] Config.pm:354> INFO - This is Biber 2.7
 [0] Config.pm:357> INFO - Logfile is 'bachproef-tin.blg'
-[45] biber-darwin:303> INFO - === Mon May 21, 2018, 15:57:20
-[73] Biber.pm:359> INFO - Reading 'bachproef-tin.bcf'
-[202] Biber.pm:835> INFO - Found 4 citekeys in bib section 0
-[217] Biber.pm:3670> INFO - Processing section 0
-[232] Biber.pm:3840> INFO - Looking for bibtex format file 'bachproef-tin.bib' for section 0
-[234] bibtex.pm:1435> INFO - Decoding LaTeX character macros into UTF-8
-[239] bibtex.pm:1292> INFO - Found BibTeX data source 'bachproef-tin.bib'
-[245] Biber.pm:3840> INFO - Looking for bibtex format file '../voorstel/voorstel.bib' for section 0
-[398] Utils.pm:180> ERROR - Cannot find '../voorstel/voorstel.bib'!
-[398] Biber.pm:113> INFO - ERRORS: 1
+[43] biber-darwin:303> INFO - === Mon May 21, 2018, 21:06:05
+[67] Biber.pm:359> INFO - Reading 'bachproef-tin.bcf'
+[181] Biber.pm:835> INFO - Found 7 citekeys in bib section 0
+[196] Biber.pm:3670> INFO - Processing section 0
+[215] Biber.pm:3840> INFO - Looking for bibtex format file 'bachproef-tin.bib' for section 0
+[218] bibtex.pm:1435> INFO - Decoding LaTeX character macros into UTF-8
+[226] bibtex.pm:1292> INFO - Found BibTeX data source 'bachproef-tin.bib'
+[246] Biber.pm:3840> INFO - Looking for bibtex format file '../voorstel/biblio.bib' for section 0
+[247] bibtex.pm:1435> INFO - Decoding LaTeX character macros into UTF-8
+[248] bibtex.pm:1292> INFO - Found BibTeX data source '../voorstel/biblio.bib'
+[251] Utils.pm:164> WARN - I didn't find a database entry for 'Introduction_2018' (section 0)
+[268] UCollate.pm:68> INFO - Overriding locale 'nl-NL' defaults 'variable = shifted' with 'variable = non-ignorable'
+[268] UCollate.pm:68> INFO - Overriding locale 'nl-NL' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[268] Biber.pm:3499> INFO - Sorting list 'apa/global/' of type 'entry' with scheme 'apa' and locale 'nl-NL'
+[268] Biber.pm:3505> INFO - No sort tailoring available for locale 'nl-NL'
+[276] bbl.pm:608> INFO - Writing 'bachproef-tin.bbl' with encoding 'UTF-8'
+[277] bbl.pm:712> INFO - Output to bachproef-tin.bbl
+[277] Biber.pm:109> INFO - WARNINGS: 1

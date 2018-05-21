@@ -1,0 +1,159 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.8 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \sortlist[entry]{apa/global/}
+    \entry{atwood_understanding_2008}{online}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=672cf6561f27247e38f56754f51c7e31}{%
+           family={Atwood},
+           familyi={A\bibinitperiod},
+           given={Jeff},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{672cf6561f27247e38f56754f51c7e31}
+      \strng{fullhash}{672cf6561f27247e38f56754f51c7e31}
+      \strng{authornamehash}{672cf6561f27247e38f56754f51c7e31}
+      \strng{authorfullhash}{672cf6561f27247e38f56754f51c7e31}
+      \field{sortinit}{A}
+      \field{sortinithash}{3248043b5fe8d0a34dab5ab6b8d4309b}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Like everything else in software engineering, it seems, the concept of Model-View-Controller was originally invented by Smalltalk programmers.}
+      \field{day}{5}
+      \field{month}{5}
+      \field{title}{Understanding the Model-View-Controller}
+      \field{year}{2008}
+      \field{dateera}{ce}
+      \verb{url}
+      \verb https://blog.codinghorror.com/understanding-model-view-controller/
+      \endverb
+    \endentry
+    \entry{_benchmark_????}{inreference}{}
+      \field{sortinit}{B}
+      \field{sortinithash}{5f6fa000f686ee5b41be67ba6ff7962d}
+      \field{labeldatesource}{nodate}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Cambridge Advanced Learner’s Dictionary \& Thesaurus}
+      \field{title}{Benchmark}
+      \verb{url}
+      \verb https://dictionary.cambridge.org/dictionary/english/benchmark
+      \endverb
+    \endentry
+    \entry{javascriptframework}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=1c413f69a1bf47b2908ea9efb65c4c95}{%
+           family={Buckler},
+           familyi={B\bibinitperiod},
+           given={Craig},
+           giveni={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{1c413f69a1bf47b2908ea9efb65c4c95}
+      \strng{fullhash}{1c413f69a1bf47b2908ea9efb65c4c95}
+      \strng{authornamehash}{1c413f69a1bf47b2908ea9efb65c4c95}
+      \strng{authorfullhash}{1c413f69a1bf47b2908ea9efb65c4c95}
+      \field{sortinit}{B}
+      \field{sortinithash}{5f6fa000f686ee5b41be67ba6ff7962d}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{https://www.sitepoint.com/top-javascript-frameworks-libraries-tools-use/}
+      \field{title}{Top JavaScript frameworks, libraries and tools to use in 2017}
+      \field{year}{2017}
+    \endentry
+    \entry{clifton_what_2003}{online}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=a8658fff74ea3f484c5db12fc9adf282}{%
+           family={Clifton},
+           familyi={C\bibinitperiod},
+           given={Marc},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{a8658fff74ea3f484c5db12fc9adf282}
+      \strng{fullhash}{a8658fff74ea3f484c5db12fc9adf282}
+      \strng{authornamehash}{a8658fff74ea3f484c5db12fc9adf282}
+      \strng{authorfullhash}{a8658fff74ea3f484c5db12fc9adf282}
+      \field{sortinit}{C}
+      \field{sortinithash}{095692fd22cc3c74d7fe223d02314dbd}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{3}
+      \field{month}{11}
+      \field{title}{What is a Framework}
+      \field{titleaddon}{What is a Framework}
+      \field{year}{2003}
+      \field{dateera}{ce}
+      \verb{url}
+      \verb https://www.codeproject.com/Articles/5381/What-Is-A-Framework
+      \endverb
+    \endentry
+    \entry{eskelin_software_2001}{online}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=f7626e4cf0ddc300ec039e752ecca3d1}{%
+           family={Eskelin},
+           familyi={E\bibinitperiod},
+           given={Philip},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{f7626e4cf0ddc300ec039e752ecca3d1}
+      \strng{fullhash}{f7626e4cf0ddc300ec039e752ecca3d1}
+      \strng{authornamehash}{f7626e4cf0ddc300ec039e752ecca3d1}
+      \strng{authorfullhash}{f7626e4cf0ddc300ec039e752ecca3d1}
+      \field{sortinit}{E}
+      \field{sortinithash}{07bbd5a529b5beaa311df5be05b874bc}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Here are some types of software frameworks:}
+      \field{day}{3}
+      \field{month}{11}
+      \field{title}{Software Framework}
+      \field{titleaddon}{Software Framework}
+      \field{year}{2001}
+      \field{dateera}{ce}
+      \verb{url}
+      \verb http://wiki.c2.com/?SoftwareFramework
+      \endverb
+    \endentry
+    \entry{_model-view-controller_2014}{online}{}
+      \field{sortinit}{M}
+      \field{sortinithash}{c26a05ef03e4429073ed5c825140fac3}
+      \field{labeldatesource}{}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The purpose of many computer systems is to retrieve data from a data store and display it for the user. After the user changes the data, the system stores the updates in the data store. Because the key flow of information is between the data store and the user interface, you might be inclined to tie these two pieces together to reduce the amount of coding and to improve application performance. However, this seemingly natural approach has some significant problems. One problem is that the user interface tends to change much more frequently than the data storage system. Another problem with coupling the data and user interface pieces is that business applications tend to incorporate business logic that goes far beyond data transmission.}
+      \field{day}{17}
+      \field{month}{3}
+      \field{title}{Model-View-Controller}
+      \field{year}{2014}
+      \field{dateera}{ce}
+      \verb{url}
+      \verb https://docs.microsoft.com/en-us/previous-versions/msp-n-p/ff649643(v=pandp.10)
+      \endverb
+    \endentry
+  \endsortlist
+  \missing{Introduction_2018}
+\endrefsection
+\endinput
+

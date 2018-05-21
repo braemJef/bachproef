@@ -2299,13 +2299,16 @@
   <!-- SECTION 0 -->
   <bcf:bibdata section="0">
     <bcf:datasource type="file" datatype="bibtex">bachproef-tin.bib</bcf:datasource>
-    <bcf:datasource type="file" datatype="bibtex">../voorstel/voorstel.bib</bcf:datasource>
+    <bcf:datasource type="file" datatype="bibtex">../voorstel/biblio.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1">Pollefliet2011</bcf:citekey>
-    <bcf:citekey order="2">Knuth1998</bcf:citekey>
-    <bcf:citekey order="3">Creeger2009</bcf:citekey>
-    <bcf:citekey order="4">javascriptframework</bcf:citekey>
+    <bcf:citekey order="1">Introduction_2018</bcf:citekey>
+    <bcf:citekey order="2">clifton_what_2003</bcf:citekey>
+    <bcf:citekey order="3">eskelin_software_2001</bcf:citekey>
+    <bcf:citekey order="4">_benchmark_????</bcf:citekey>
+    <bcf:citekey order="5">atwood_understanding_2008</bcf:citekey>
+    <bcf:citekey order="6">_model-view-controller_2014</bcf:citekey>
+    <bcf:citekey order="7">javascriptframework</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" name="apa/global/" type="entry" sortscheme="apa" sortnamekeyscheme="global" labelprefix="">
   <bcf:sorting>
