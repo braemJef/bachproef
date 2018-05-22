@@ -82,6 +82,341 @@ Informatie wordt weergegeven aan de gebruiker via de view. De view doet geen bew
 \label{sec:MVC_Controller}
 De controller kan events opvangen en hierop reageren. Meestal worden er dan bewerkingen uitgevoerd op waarden uit de model. De model word dan aangepast en hierdoor zal de view dan weer geupdate worden.
 
+\section{JavaScript Frameworks}
+\label{sec:JavaScript_Frameworks}
+
+In dit hoofdstuk gaan we alle gekozen JavaScript frameworks bespreken samen met hun basisprincipes. Daarna zal bij elk framework in detail besproken worden hoe het renderen gebeurt. Dit heeft namelijk een groot effect op performance.
+
+JavaScript wordt alsmaar populairder met de toename aan frameworks en libraries die gemaakt worden. Voor dit project zijn er drie frameworks gekozen om te vergelijken. De gekozen frameworks zijn React, Angular en Vue. De reden waarom deze gekozen zijn, is omdat deze de drie ‘populairste’ frameworks zijn op dit moment. Hierdoor is er meer ondersteuning en vernieuwing door de community. Ten slotte word er op elk framework iets dieper ingegaan en meerdere basisbegrippen van elk framework worden besproken. Om te bepalen welke frameworks het populairste zijn werd er gekeken naar hoeveel sterren het framework heeft op GitHub \autocite{github_front-end_????}.
+
+\subsection{Angular}
+\label{sec:JavaScript_Frameworks_Angular}
+Laatste versie: Version 6.0.2
+
+Angular is een framework om applicaties te bouwen met HTML en Typescript. Angular zelf is ook geschreven in Typescript. De basis bouwstenen die Angular op dit moment aanbiedt zijn module, component en service.Alle informatie over deze basisprincipes komt uit de officiële documentatie van Angular \autocite{_angular_2018}.
+
+\subsubsection{Module}
+\label{sec:Angular_Module}
+Angular apps zijn modulair. Dit betekent dat de applicatie bestaat uit modules. Zo een module is een bouwsteen code die zich bezighoudt met een bepaald domein van de applicatie, een bepaalde workflow of een gerelateerd stuk code. In een module kan je componenten en services vinden. De scope van deze onderdelen is bepaald door deze module. Een module kan functionaliteit van een andere module importeren maar ook eigen functionaliteit exporteren. De module bepaald zelf welke functionaliteit het open stelt voor andere modules.
+
+\subparagraph{Module metadata}
+Een module is een klasse met een @NgModule decorator. Deze decorator neemt 1 metadata object als parameter. Dit object zal de module beschrijven.
+
+De belangrijkste attributen zijn de volgende:
+\begin{itemize}
+	\item Declarations: Alle components, directives en pipes dat deze module bevat.
+	\item Exports: Alles dat andere modules moeten kunnen importeren.
+	\item Imports: Andere modules die nodig zijn voor deze module.
+	\item Providers: Services worden hier gemaakt, ze worden beschikbaar voor de hele module. Je kan providers ook op component niveau aanmaken. Dit is meestal de voorkeur.
+	\item Bootstrap: Dit is het algemene applicatie scherm. De root component. Deze moet in elke module als bootstrap property gezet worden.
+\end{itemize}
+
+Modules voorzien een compilatie context voor hun componenten. Tijdens de bootstrap wordt er voor elke module een root component aangemaakt. Hierin komen alle componenten van deze module. Een module kan een willekeurig aantal componenten hebben.
+
+\subsubsection{Component}
+\label{sec:Angular_Component}
+Een component is een kleine bouwsteen op het scherm, meestal wordt dit een view genoemd. Een bouwsteen kan gaan van kleine dingen zoals knoppen, tot grotere gehelen zoals een form, een kalender of een lijst van items.
+
+De taak van een component is om data weer te geven en acties van de gebruiker door te sturen. Hierdoor blijven componenten puur en eenvoudig. Data ophalen van de server, user input valideren en logica is de taak van services. Services worden later uitgelegd.
+
+Je maakt een component met een klasse, hierin komt alle logica om met de view in te werken. Angular zorgt ervoor dat componenten gecreëerd, bijgewerkt en verwijdert worden. De app die je maakt kan hier gebruik van maken door in te springen op deze lifecycle hooks. Hier word later meer uitleg over gegeven.
+
+\subparagraph{Component metadata}
+Een component is een klasse met een @Component decorator. Deze decorator neemt net zoals bij een module 1 metadata object als parameter.
+
+De belangrijkste attributen van dit object zijn:
+\begin{itemize}
+	\item Selector: Dit is een CSS selector. Een CSS selector zorgt ervoor dat een instantie van deze component in de template HTML word gestopt waar Angular een overeenkomstige tag vind. Als de tag ‘app-button’ is dan zal Angular op alle plekken waar ‘<app-button />’ staat deze component invoegen.
+	\item TemplateUrl: Dit is het adres dat de component zal hebben ten opzichte van de module.
+	\item Providers: Dit is een Array van services dat de component nodig heeft. Angular zal hierdoor weten welke instanties er nodig zijn om deze component aan te maken.
+\end{itemize}
+
+\subparagraph{Component template}
+The component template is geschreven in de template syntax. Op het eerste zicht ziet dit er gewoon uit als HTML. Hierbij zit er dan nog de Angular template syntax. Dit bestaat uit data binding, directives en pipes. Met data binding kan je data tonen, met pipes kan je data transformeren voor je ze toont en directives dienen om app logica toe te passen op de data die je toont.
+
+\subsubsection{Service}
+\label{sec:Angular_Service}
+Een service is een bepaalde functie die een app nodig heeft om te draaien. Deze service heeft meestal 1 bepaald doeleind. Bijvoorbeeld alle functies om 1 bepaald soort objecten uit een database te halen of een form valideren. Op deze manier kan je components klein houden en kan je services hergebruiken.
+
+Componenten gebruiken services, je kan een service injecteren in een component. Zo geef je deze component de mogelijkheid om deze service te gebruiken. Om een service klasse te definiëren maak je een klasse met de @Injectable decorator. Deze zorgt ervoor dat je de service als dependency in een component kan stoppen onder providers.
+
+Angular gebruikt het principe genaamd Dependency Injection. Dit wordt doorheen het hele Angular framework gebruikt om in dit geval services aan components te geven. De injector zorgt hiervoor. Deze moet niet aangemaakt worden, Angular maakt deze aan. Als een component een service nodig heeft gaat de injector kijken of er al een instantie is van deze service. Enkel als deze nog niet aanwezig is zal een nieuwe instantie aangemaakt worden.
+
+\subsubsection{Rendering en Updaten van de view}
+\label{sec:Angular_Rendering_Updaten}
+Nu alle basisbegrippen van dit framework uitgelegd zijn kunnen we het hebben over het renderen van pagina’s en/of componenten. Dit is een belangrijk onderdeel om de theoretische snelheid te kunnen begrijpen van een framework. Verder in deze proef zal hetzelfde gedaan worden voor elk ander framework.
+
+Op het eerste zicht lijkt het proces zeer simpel. Als een data binding in Angular verandert van waarde dan zal de view hernieuw gerenderd worden. Achter dit simpele principe zit echter een zeer ingewikkeld systeem. Om dit te begrijpen zal ik het eerst hebben over de interne representatie van een applicatie in Angular.
+
+Voor elke component die gebruikt wordt zal een factory method gemaakt worden. Daarna zal Angular de components maken aan de hand van deze factory. Deze factory wordt gebruikt om de view definition op te stellen. De view definition zal hierna gebruikt worden om de component view te maken. Angular representeert de pagina als een boom structuur van views.
+
+De component factory zal een referentie teruggeven naar een viewDef functie. Deze functie maakt de view definition aan. De view definition ontvangt view definition nodes als parameters en deze stellen de structuur van de HTML voor maar kunnen ook Angular details inhouden. De twee belangrijkste nodes die wij gaan bespreken zijn element definition nodes en text definition nodes.
+
+\subparagraph{Element definition}
+Een element definition is een node dat Angular genereerd voor elk HTML element en voor componenten. Zo’n element node kan andere element nodes en/of tekst nodes als children hebben. De node heeft een bepaalde paramter genaamd bindings. Dit is de enige waarin wij geïnteresseerd zijn voor de render.
+
+\subparagraph{Text definition}
+De text definition node wordt gebruikt door Angular om een text node te maken. Dit is een zeer simpele definitie die beschrijft hoe de tekst eruit zal zien en wordt weergegeven als een array. Deze array zal hierna dan gebruikt worden om de bindings te genereren.
+
+\subparagraph{Update renderer}
+De update renderer is een functie dat de factory retourneerd. Deze functie neemt twee parameters de prodCheckAndUpdate functie en de view. De eerste parameter staat voor check en de tweede parameter staat voor de component view met de nodes. De updateRenderer functie wordt opgeroepen als angular veranderingen gaat detecteren bij een component. De parameters zullen worden doorgegeven door het mechanisme dat veranderingen detecteerd.
+
+De taak van de updateRenderer is om de prodCheckAndUpdate functie op te roepen voor elke node en veranderingen te zoeken in de nodes.
+
+\subparagraph{De DOM updaten}
+Nu we alle definities kennen die we nodig hebben om te verstaan hoe Angular componenten genereerd kunnen we zien hoe een DOM update gedaan word.
+
+Hierboven is uitgelegd hoe de updateRenderer de functie prodCheckAndUpdate als parameter heeft. Deze functie zal uitgevoerd worden en hieruit zullen meerdere functies vloeien zoals checkAndUpdateElementInline voor element nodes en checkAndUpdateTextInline voor text nodes.
+
+De checkAndUpdateElement functie zal checken of de properties van de node aangepast zijn.
+
+De checkAndUpdateText functie zal checken of de waarden van de tekst aangepast zijn ten opzichte van de vorige check. De vorige waarde zal opgeslagen worden in de oldValues property van de text node.
+
+Indien er veranderingen gebeurd zijn bij deze functies zal Angular de gepaste renderer gebruiken om de DOM te updaten. We zien ook dat elke component voor zichzelf updaten verantwoordelijk is.
+
+\subparagraph{Zones}
+Nu we weten hoe componenten geupdate en rerendered worden is er nog één vraag die beantwoord moet worden. Wie zegt nu tegen Angular wanneer er checks gedaan moeten worden en wanneer we deze moeten uitvoeren?
+
+Deze functionaliteit is in Angular geïmplementeerd door middel van zones. Een zone is een object dat een methode run bevat. Met deze run methode kunnen we functies uitvoeren. De functies worden nog steeds uitgevoerd zoals het hoort en hebben hun normaal gedrag. De functionaliteit dat een zone toevoegt zijn bepaalde hooks. Standaard zijn deze hooks onZoneCreated, beforeTask, afterTask en onError. Wat een zone nu zo speciaal maakt zijn precies deze hooks. De volgende functies worden aanzien als een task door een zone: setInterval, alert, prompt, requestAnimationFrame, addEventListener en removeEventListener. Al deze tasks kunnen onderschept worden door de hooks. Angular gaat dus gewaarschuwd worden door zijn zones telkens er een bepaald gedrag uitgevoerd word. Hierdoor zal de view hernieuw gerenderd kunnen worden waardoor het gevolg van dit gedrag zichtbaar wordt.
+
+\subsection{Vue}
+\label{sec:JavaScript_Frameworks_Vue}
+Laatste versie: v2.5.16
+
+Vue is een framework dat geïnspireerd is op het MVVM patroon. Een Vue project bestaat over één root Vue instantie. Hierna verdeeld in een boom van herbruikbare components.Alle informatie over de basisprincipes in Vue komt uit de officiële Vue documentatie \autocite{_vue_2018}.
+
+\subsubsection{Component}
+\label{sec:Vue_Component}
+In Vue is een component conceptueel hetzelfde als in Angular. Dit concept zullen we zien bij elke framework en is ook de grootste gelijkenis tussen alle frameworks. Vue beschrijft zelf zijn components als een abstractie dat ons de mogelijkheid geeft om grootschalige applicaties te bouwen. Deze kunnen dan bestaan uit kleine zelf onderhouden en meestal herbruikbare components. De meeste interfaces kunnen geabstraheerd worden in een boom van components.
+
+Een component in Vue is in principe een Vue instantie met vooraf gedefinieerde opties. Een component wordt met behulp van het volgende stuk code gemaakt.
+
+\begin{verbatim}
+Vue.component(‘component-naam’, {
+	Template: ‘<p>Dit is een basis component</p>’
+})
+\end{verbatim}
+
+Deze component kunnen we nu gaan gebruiken in een andere component zijn template. Dit doen we door de component gewoon in de HTML te stoppen. Dit kunnen we vergelijken met de HTML template uit Angular.
+
+\begin{verbatim}
+<div>
+  <component-naam />
+</div>
+\end{verbatim}
+
+Net zoals bij angular kunnen we met de component template gaan data binden. In vue kunnen we dit met de volgende syntax.
+
+\begin{verbatim}
+<p> {{ variable }} </p>
+\end{verbatim}
+
+Alles binnen deze haakjes zal als een string worden geïnterpreteerd. Er is maar 1 expressie toegestaan binnen de haakjes. 
+
+\subsubsection{Data}
+\label{sec:Vue_Data}
+Als er een Vue instantie aangemaakt wordt dan kan je hierin een data object stoppen. Vue zal dit data object blijven bekijken. Als er iets aanpast in dit data object dan zullen de views of components ‘reageren’ en zullen de waarden vernieuwd worden met de nieuwe waarden.
+
+Indien de objecten die je toevoegt aan dit data object niet gedeclareerd zijn vanaf het begin dan zal Vue hier niet op reageren. Je moet alle data een initiële waarde geven.
+
+Objecten kunnen ook niet bekeken of gevolgd worden door Vue als je ze vastzet. Dit kan met de methode ‘Object.freeze()’. Vue zal het nu niet merken als je dit object aanpast.
+
+\subsubsection{Lifecycle Hooks}
+\label{sec:Vue_Lifecycle}
+Net zoals we gezien hebben in Angular heeft Vue ook Lifecycle methoden. Een paar voorbeelden zijn created, updated en destroyed. Deze kunnen gebruikt worden om data klaar te zetten.
+
+In de Vue documentatie staat er een waarschuwing. Als men gebruik maakt van deze methoden let je best op met de scope van je functies. Indien je lambda functies gebruikt zal de scope wijzen naar de ouder context in plaats van de vue instantie.
+
+\subsubsection{Rendering en Updaten van de view}
+\label{sec:Vue_Rendering_Updaten}
+Net zoals bij Angular zullen we na deze basisbegrippen uitgelegd te hebben het hebben over het renderen en updaten van de view. Vue gebruikt hiervoor het concept van een Virtual DOM. De Virtual DOM als begrip en idee werd eerst geïntroduceerd door React. Hierna zijn vele andere frameworks dit concept ook gaan gebruiken waaronder ook Vue.
+
+De Virtual DOM is simpelweg een JavaScript object dat de DOM voorsteld. Het is net zoals de gewone DOM een boomstructuur die alle elementen beschrijft. Je applicatie zal de Virtual DOM updaten en nooit directe manipulaties doen op de DOM.
+
+Zoals geweten is manipulaties doen op de DOM een dure bewerking. De echte DOM wordt meteen gerenderd in de browser als je hem update. Met behulp van een Virtual DOM kunnen we meerdere bewerkingen op de dom bijhouden en nadien tegelijk uitvoeren op de echte DOM. Het tweede voordeel dat zo’n Virtual DOM biedt is dat je kan kiezen welk deel opnieuw gerenderd moet worden. Stel dat je pagina 10 elementen telt maar er wordt er maar één aangepast. Hiervoor heeft de Virtual DOM een functie die kan vinden welk element er is aangepast en deze enkel gaan aanpassen in de DOM.
+
+Vue zal bij het builden van de applicatie je templates omzetten naar een Virtual DOM. De values van data bindings zullen in de Virtual DOM de waarde krijgen die ze op dat moment hebben. Het voordeel om de templates om te zetten bij build time is dat er performance kan gespaard worden door dit niet in de runtime te doen.
+
+\subparagraph{Het proces}
+Nu we in grote lijnen weten hoe Vue zijn componenten zal renderen kunnen we het hebben over het proces. In dit deel zullen we het beknopt hebben over hoe Vue dit proces uitvoert.
+
+Het eerste wat hiervoor besproken zal worden is de defineProperty functie deze functie zal opgeroepen worden telkens je het Data object van een component aanpast. De defineProperty functie zorgt ervoor dat elk data object een getter en setter krijgt.
+
+Als we zo’n set function oproepen en het Data object dus gaan updaten zal Vue de Watcher gaan aanspreken. Dit zijn objecten binnen de Vue Virtual DOM. Een Watcher zal aangemaakt worden voor elke component als de applicatie geïnitializeerdt word. De taak van deze watcher zal zijn om de Virtual DOM en de DOM te updaten. Maar zal dit niet meteen doen.
+
+Het moment dat de Watcher aangesproken word zal hij zichzelf toevoegen aan een wachtlijst. Hierdoor wordt vermeden dat de Watcher meerdere maal uitgevoerd zal worden. De Watcher wordt namelijk elke keer er een setter aangeroepen word uitgevoerd. Als een Data object nu 10 variabelen heeft zal deze 10 keer aangeroepen worden vlak na elkaar. Nadat de Watcher in de wachtlijst komt zal de wachtlijst opgeruimd worden en gesorteerd worden. Het opruimen gebeurt door dubbele Watchers samen te voegen.
+
+De laatste stap van dit proces is de nextTick API. Deze Vue functie zal alle Watchers uitvoeren en doorspoelen in de wachtlijst. Eenmaal alle Watchers uitgevoerd en doorgespoeld zijn zal de DOM geupdate worden. Na al deze stappen zal de DOM geupdate worden in de Watcher zijn run functie. De run functie kan ook handmatig aangeroepen worden om een force rerender aan te roepen. De Watchers die elk verantwoordelijk zijn voor hun eigen component zullen hier dus elk hun eigen component gaan updaten in de Virtual DOM en de DOM.
+
+In het volgende en laatste hoofdstuk zullen we bespreken hoe het laatste framework React het re-renderen en updaten van de view afhandelt.
+
+
+\subsection{React}
+\label{sec:JavaScript_Frameworks_React}
+Laatste versie: v16.3.2
+
+Volgens React is het een declaratieve, effectieve en flexibele JavaScript library om interfaces te bouwen. Het is inderdaad een libary, maar de mogelijkheden die React biedt leiden tot veel discussie of het nu een library of een framework is. In dit onderzoek werd React ook gekozen omdat het samen met de 2 andere frameworks bij de 3 populairste methodes hoort voor web development. De reden dat tot deze discussie leidt is omdat react enkel de view is. React bestaat uit een virtuele DOM die gebruikt wordt voor het efficiënt re-renderen van de DOM. Hiernaast zijn er ook components die een eigen state hebben.Alle informatie over de basisprincipes in React komt uit de officiële React documentatie \autocite{_react_2018}.
+
+\subsubsection{Component}
+\label{sec:React_Component}
+In React is het mogelijk op een component op verschillende manieren te declareren. De belangrijkste manier is de React.Component klasse. In dit geval is de component een klasse die React.Component zal overerven.
+
+\begin{verbatim}.
+class Component extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {}
+  }  
+  render() {
+    return (<p>Dit is een component.</p>);
+  }
+}
+\end{verbatim}
+
+Een component als deze heeft minstens één methode namelijk ‘render()’. Deze methode geeft een descriptie van wat je wilt renderen. Dit noemen we een React element. Een React element is een uitleg van wat je wil weergeven op het scherm. De syntax van de ‘render()’ methode lijkt enorm op HTML maar is eigenlijk een syntax genaamd JSX. React zorgt ervoor dat de component correct kan weergegeven worden in de browser wanneer er data aangepast wordt.
+
+De tweede methode om componenten te maken noemen we functional components. Deze syntax is korter wat wilt zeggen ook eenvoudiger. In plaats van een klasse te declareren die ‘React.Component’ extend kunnen we ook een functie schrijven die teruggeeft wat we willen renderen.
+
+\begin{verbatim}
+function FunctionalComponent(props) {
+	return (
+	<p>Dit is een functionele component.</p>
+	);
+}
+\end{verbatim}
+
+Nu de twee methoden uitgelegd zijn om een component aan te maken wordt er meer uitleg gegeven over wat een component inhoud. Elke component heeft een ‘props’ parameter. Via de props kan data doorgegeven worden aan child components. Props worden doorgegeven in de JSX syntax in de render.
+
+\begin{verbatim}
+class Parent extends React.Component {
+	render() {
+		return (
+		<Child value={‘This is a message from the parent component.’} />
+		);
+	}
+}
+
+function Child(props) {
+	return (
+	<p>{props.value}</p> // => <p>This is a message from the parent component.</p>
+	);
+}
+\end{verbatim}
+
+Elke react component heeft ook een state. Als de state van een component aanpast zal React de components proberen re-renderen. React zal dit enkel en alleen doen indien dit nodig is voor de gebruiker.
+
+\subsubsection{Rendering en Updaten van de view}
+\label{sec:React_Rendering_Updaten}
+In dit onderdeel zal ik voor React uitleggen hoe het renderen en updaten van een view in zijn werk gaat. Net zoals bij Vue zal React werken met een Virtual DOM. React is namelijk het eerste framework dat met deze render oplossing is gekomen. Zij hebben dit concept ook verder uitgewerkt.
+
+Als in react de state aagepast word dan zal een component gemarkeerd worden als ‘dirty’. Alle DOM event listeners zijn in React omhult in hun eigen event listeners. Hierdoor wordt door elke muisklik of ander event een naamloze functie van React opgeroepen worden. Als een component zijn state aangepast wordt dan zal die gemarkeerd worden als ‘dirty’.
+
+Nu is de component gemarkeerd als dirty. Ten eerste zullen we de component updaten als batch update. Dit betekend dat als de state meerdere keren vlak na elkaar aangepast word React maar 1 keer zal rerenderen. Hierna zal er nogmaals gekeken worden of de state aangepast is of er een forceUpdate aangeroepen werd.
+
+Hierna zullen we de hele lifecycle doorlopen van de React component. In dit onderdeel gaan we dieper ingaan op één bepaalde lifecycle methode namelijk render. React zal nu de Virtual DOM aanpassen. Het concept van een Virtual dom werd reeds uitgelegd bij Vue.
+
+Het moment waarop de Virtual DOM heropgebouwd word zal React kijken of het vorige en volgende element van hetzelfde type en sleutel zijn. Indien dit niet het geval is zal het dit overeenstemmen. Hierna zal de DOM geupdate worden met de components die in de Virtual DOM aangepast zijn in één keer.
+
+\subsection{Data binding}
+\label{sec:Data_Binding}
+Elk framework gebruikt het concept data bindings. Er bestaan 2 types data binding. One-way data binding en two-way data binding.
+
+Traditionele server-side web applicaties maken gebruik van one-way data binding. Hier word een template en data modellen samengevoegd en verzonden naar de gebruiker zijn browser. Alle aanpassingen die gemaakt worden moeten dus via de server gebeuren en er zal een nieuwe view verstuurd moeten worden naar de browser.
+
+De meest gebruikte methode van data binding in JavaScript Frameworks is two-way data binding. De view is hierbij een directe projectie van het model. Dit betekend dat alle aanpassingen door de gebruiker meteen aangepast worden in het model en omgekeerd worden ook alle aanpassingen in het model meteen zichtbaar in de view.
+
+\subsection{Application state}
+\label{sec:Application_state}
+De state van een applicatie is de plek waar data vandaan komt. Om een web applicatie interactiever te maken zijn er meer states nodig. Bij server side rendering of one-way data binding is het moeilijker om kleine aanpassingen te maken. Dit is bij web applicaties die gebouwd zijn met JavaScript frameworks makkelijker te implementeren. Hierdoor hebben zo’n web applicaties meestal een complexere state. De state van een applicatie kan op verschillende manieren aangepast worden:
+
+\begin{itemize}
+	\item I/O in forms, fields kunnen gevalideerd worden.
+	\item Interactie met knoppen kan een nieuwe pagina tonen.
+	\item Data van de API kan aankomen.
+\end{itemize}
+
+\subsection{Vergelijking criteria}
+\label{sec:Vergelijking_Criteria}
+
+\subsubsection{Theoretische vergelijking}
+\label{sec:Theoretische_Vergelijking}
+In dit onderdeel zullen we alle criteria bespreken die we kunnen afleiden uit het literatuur onderzoek en de bronnen. Eerst worden alle criteria opgesomd.
+
+\subparagraph{Populariteit}
+Een populair framework gebruiken is voordelig in vele aspecten. Het is ook zeer belangrijk voor de stabiliteit van het framework. Een developer vind veel informatie op StackOverflow en andere fora. Hier worden problemen besproken en opgelost door mede-developers. Een grote developer gebruikers aantal kan ervoor zorgen dat bugs sneller gerapporteerd worden. Daarnaast zullen deze bugs ook sneller kunnen opgelost worden. Naast deze voordelen zorgt de grote populariteit er ook voor dat er veel libraries gemaakt en ondersteund worden voor dit framework.
+
+\begin{itemize}
+	\item Wat zijn de resultaten op Google Trends van deze drie frameworks? Google Trends geeft een goede indicatie over hoe populair een framework is en hoe veel developers ernaar zoeken. Het geeft ook een indicatie naar hoe de populariteit stijgt of daalt.
+	\item Wat zijn de resultaten op StackOverflow Trends van deze drie frameworks? StackOverflow Trends geeft een goede indicatie over hoeveel informatie je kan vinden over deze frameworks. Een probleem oplossen is altijd apart maar sommige gelijkaardige problemen kunnen al opgelost zijn op StackOverflow. Hierdoor kan tijd bespaard worden.
+	\item Hoeveel GitHub watchers telt het framework? Hoe meer mensen het project volgen op github hoe meer development versies getest kunnen worden. Hierdoor kunnen features sneller gepubliceerd worden.
+\end{itemize}
+
+\subparagraph{Security}
+Tegenwoordig slaat bijna elke site gevoelige of persoonlijke info op in een database die verbonden staat met het internet. Door de groei van het web word dit als maar meer en meer data. De veiligheid van deze data is zeer belangrijk. Een security breach kan mogelijk de informatie lekken van vele gebruikers en het vertrouwen kan hierdoor verloren worden. Hiervoor gaan we een paar criteria opnemen in deze proef.
+
+\begin{itemize}
+	\item Voorkomt het framework Cross Site Request Forgery? Cross site request forgery is een veiligheidsprobleem waarbij de gebruiker gedwongen wordt om acties uit te voeren die hij niet wil. Deze aanval gaat niet om data diefstal. Het is een aanval waarbij de aanvaller de state van de applicatie manipuleert.
+	\item Voorkomt het framework Cross Site Scripting? Cross site scripting zijn een soort van injectie waardoor kwaadaardige scripts geïnjecteerd worden in vertrouwbare websites. De gebruiker’s browser heeft geen manier om te valideren of de scripts te vertrouwen zijn.
+\end{itemize}
+
+\subparagraph{Bruikbaarheid}
+De bruikbaarheid en developer vriendelijkheid van een framework zijn belangrijk. Door bepaalde repetitieve code te genereren kan er veel tijd bespaard worden. Sommige talen zoals TypeScript zorgen er voor dat er minder fouten op typering kunnen gemaakt worden. Deze factoren kunnen de bruikbaarheid van het framework verbeteren.
+
+\begin{itemize}
+	\item Bestaat er een tool om code te genereren? In plaats van herhaalbare code te blijven schrijven bespaard code generatie veel tijd voor een developer.
+	\item Welke JavaScript taal ondersteund het framework? Er zijn meerdere versies en soorten van JavaScript gebaseerde talen.
+\end{itemize}
+
+\subparagraph{Stabiliteit}
+Er is geen enkele methode die ons toestaat om de stabiliteit van een framework te meten. We kunnen dit proberen achterhalen door te kijken hoe wijd gebruikt het framework is.
+
+\begin{itemize}
+	\item Wordt het framework gebruikt door een grote organisatie? Als een groot bedrijf dit framework gebruikt kan het een indicatie zijn naar hoe stabiel het framework is. Dit is ook een indicatie naar hoe dit bedrijf staat ten opzichte van deze technologie in de toekomst.
+\end{itemize}
+
+\subparagraph{Compatibiliteit}
+JavaScript wordt uitgevoerd in de browser en het is belangrijk dat het framework ondersteund word door zo veel mogelijk browsers. Mobiele apparaten zijn ook een belangrijk onderdeel, een groot deel van de gebruikers gebruikt zijn mobiel toestel om te surfen op het internet.
+
+\begin{itemize}
+	\item Welke versies van JavaScript is de framework voor gebouwd? Op dit moment is ECMAScript 6 de nieuwste versie van JavaScript. Deze is echter nog niet in alle browsers compleet beschikbaar. Alle ECMAScript 6 functionaliteit moet dus gecompileerd worden naar ECMAScript 5.
+	\item Ondersteunt het framework mobiele apparaten? Tegenwoordig bestaat het grootste deel van de internet gebruikers uit mobiele apparaten. Het is dus belangrijk om deze te ondersteunen.
+\end{itemize}
+
+\subparagraph{Modulair}
+Het doel van modulair zijn is om structuur te geven aan de developer. Een voorbeeld van modulair zijn is het gebruik van componenten. Een component is namelijk een geïsoleerde eenheid die vervangen kan worden. Het maakt het makkelijker om de gehele applicatie te onderhouden.
+
+\begin{itemize}
+	\item Heeft de framework een specifiek ontwerp patroon waardoor het development van verschillende lagen of componenten makkelijker word? Zoals hierboven vermeld is het belangrijk om structuur en vervangbaarheid te hebben in een project. 
+	\item Ondersteund het framework een component gebaseerde methodologie? Werken met componenten is cruciaal geworden in het hedendaagse web development. Componenten kunnen makkelijk vervangen of verplaatst worden zonder de gehele applicatie te beïnvloeden.
+\end{itemize}
+
+\subparagraph{Testing}
+Het is belangrijk dat de frameworks getest kunnen worden. Veel development teams gebruikten een test-driven development methode. Dit zorgt ervoor dat aanpassingen de applicatie niet stuk maken en dat nieuwe functionaliteit getest kan worden voor release. Testen zijn belangrijk omdat software bugs zeer duur of zelfs gevaarlijk kunnen zijn voor de gebruiker.
+
+\begin{itemize}
+	\item Ondersteund het framework unit tests? Unit tests zorgen ervoor dat de functionaliteit van bepaalde modules correct werkt.
+	\item Ondersteund het framework integratie tests? Integratie tests zorgen ervoor dat de gehele applicatie getest kan worden.
+\end{itemize}
+
+\subsubsection{Praktische vergelijking}
+\label{sec:Praktische_Vergelijking}
+In dit onderdeel zullen alle metrieken besproken worden die getest worden in deze proef. Er worden twee soorten metrieken besproken. De eerste soort zullen meten op software complexiteit en de tweede soort op performance.
+
+\subparagraph{Lines of code }
+Lines of code is de eerste metriek die we zullen gaan hanteren. Lines of code verwijst meestal naar de lijnen code die niet in commentaar staan of lege lijnen zijn. Toen men in assembly languages code schreef was deze metriek zeer duidelijk. Het aantal lijnen code kwam overeen met het aantal lijnen instructies. Tegenwoordig is dit al heel wat veranderd. Lines of code is complexer geworden door de manier waarop programmeertalen en programma’s gestructureerd zijn. Nu zijn er twee methodieken om lines of code te tellen. De eerste is physical lines of code (SLOC) dit zijn alle lijnen code min de lege lijnen en lijnen commentaar. Hiernaast is er ook de logical lines of code (LLOC). Deze tweede methode telt het aantal uitvoerbare statements in de code.
+
+\subparagraph{Cyclomatic complexity}
+Cyclomatic complexity meet het aantal lineair onafhankelijke paden door de broncode van een programma. Dit betekend het aantal unieke paden die doorheen de applicatie gaan. Deze index kan hoog zijn in zeer complexe applicaties en zou niet hoog mogen zijn in simpele applicaties. Hieruit kunnen we afleiden dat code geschreven met veel condities een hoge cyclomatic complexity zal hebben.
+
+\subparagraph{First meaningfull paint}
+First meaningfull paint is de tijd waarop de applicatie initieel laad en is cruciaal bij de gebruiker. De eerste momenten waarop een webstie laad geven de gebruiker een gevoel hoe performant de website is. Hoe kleiner deze initiële tijd is hoe beter.
+
+\subparagraph{Tarief}
+Het tarief is het aantal werk dat een framework kan doen binnen een bepaalde tijdspanne is een belangrijke factor bij performance. Dit is ook cruciaal voor de gebruiker. Het tarief zullen we meten aan de hand van meerdere tests. Elke test zal een verschillende hoeveelheid werk hebben. We gaan testen hoe lang het duurt voor een framework om een variabel aantal entiteiten te veranderen.
+
+\subparagraph{Grootte}
+De grootte van de applicatie is te zien in de Chrome netwerk tab. Hoe kleiner deze file hoe minder de gebruiker zal moeten downloaden. Dit zorgt ook voor een sneller en performanter gevoel. Deze pijler hangt af van te grootte van het framework en extra afhankelijkheden die we toevoegen in het project. Om dit zo eerlijk mogelijk te laten verlopen zal in elk project zo min mogelijk afhankelijkheden toegevoegd worden. Zo kan elk framework zo correct mogelijk vergeleken worden.
+
 
 
 

@@ -19,6 +19,21 @@
 
 \refsection{0}
   \sortlist[entry]{apa/global/}
+    \entry{_angular_2018}{online}{}
+      \field{sortinit}{A}
+      \field{sortinithash}{3248043b5fe8d0a34dab5ab6b8d4309b}
+      \field{labeldatesource}{}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Angular is a platform that makes it easy to build applications with the web. Angular combines declarative templates, dependency injection, end to end tooling, and integrated best practices to solve development challenges. Angular empowers developers to build applications that live on the web, mobile, or the desktop.}
+      \field{title}{Angular docs}
+      \field{titleaddon}{Angular docs}
+      \field{type}{Documentation website}
+      \field{year}{2018}
+      \field{dateera}{ce}
+      \verb{url}
+      \verb https://angular.io/docs
+      \endverb
+    \endentry
     \entry{atwood_understanding_2008}{online}{}
       \name{author}{1}{}{%
         {{uniquename=0,hash=672cf6561f27247e38f56754f51c7e31}{%
@@ -137,6 +152,29 @@
       \verb http://wiki.c2.com/?SoftwareFramework
       \endverb
     \endentry
+    \entry{github_front-end_????}{online}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=d3b7c913cd04ebfec0e9ec32cb6fd58c}{%
+           family={{GitHub}},
+           familyi={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{d3b7c913cd04ebfec0e9ec32cb6fd58c}
+      \strng{fullhash}{d3b7c913cd04ebfec0e9ec32cb6fd58c}
+      \strng{authornamehash}{d3b7c913cd04ebfec0e9ec32cb6fd58c}
+      \strng{authorfullhash}{d3b7c913cd04ebfec0e9ec32cb6fd58c}
+      \field{sortinit}{G}
+      \field{sortinithash}{618d986594b7198ba52cf8b00d348f3f}
+      \field{labeldatesource}{nodate}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{While the number of ways to organize {JavaScript} is almost infinite, here are some tools that help you build single-page applications.}
+      \field{title}{Front-end {JavaScript} frameworks}
+      \field{titleaddon}{Front-end {JavaScript} frameworks}
+      \verb{url}
+      \verb https://github.com/collections/front-end-javascript-frameworks
+      \endverb
+    \endentry
     \entry{_model-view-controller_2014}{online}{}
       \field{sortinit}{M}
       \field{sortinithash}{c26a05ef03e4429073ed5c825140fac3}
@@ -150,6 +188,36 @@
       \field{dateera}{ce}
       \verb{url}
       \verb https://docs.microsoft.com/en-us/previous-versions/msp-n-p/ff649643(v=pandp.10)
+      \endverb
+    \endentry
+    \entry{_react_2018}{online}{}
+      \field{sortinit}{R}
+      \field{sortinithash}{c15bc8eb6936bc6b3c8baa9e8575af53}
+      \field{labeldatesource}{}
+      \field{labeltitlesource}{title}
+      \field{abstract}{React is a declarative, efficient, and flexible {JavaScript} library for building user interfaces.}
+      \field{title}{React docs}
+      \field{titleaddon}{React docs}
+      \field{type}{Documentation website}
+      \field{year}{2018}
+      \field{dateera}{ce}
+      \verb{url}
+      \verb https://reactjs.org/docs/
+      \endverb
+    \endentry
+    \entry{_vue_2018}{online}{}
+      \field{sortinit}{V}
+      \field{sortinithash}{555737dafdcf1396ebfeae5822e5bde2}
+      \field{labeldatesource}{}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Vue (pronounced /vjuː/, like view) is a progressive framework for building user interfaces. Unlike other monolithic frameworks, Vue is designed from the ground up to be incrementally adoptable. The core library is focused on the view layer only, and is easy to pick up and integrate with other libraries or existing projects. On the other hand, Vue is also perfectly capable of powering sophisticated Single-Page Applications when used in combination with modern tooling and supporting libraries.}
+      \field{title}{Vue docs}
+      \field{titleaddon}{Vue docs}
+      \field{type}{Documentation website}
+      \field{year}{2018}
+      \field{dateera}{ce}
+      \verb{url}
+      \verb https://vuejs.org/v2/guide/
       \endverb
     \endentry
   \endsortlist

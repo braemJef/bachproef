@@ -2308,7 +2308,11 @@
     <bcf:citekey order="4">_benchmark_????</bcf:citekey>
     <bcf:citekey order="5">atwood_understanding_2008</bcf:citekey>
     <bcf:citekey order="6">_model-view-controller_2014</bcf:citekey>
-    <bcf:citekey order="7">javascriptframework</bcf:citekey>
+    <bcf:citekey order="7">github_front-end_????</bcf:citekey>
+    <bcf:citekey order="8">_angular_2018</bcf:citekey>
+    <bcf:citekey order="9">_vue_2018</bcf:citekey>
+    <bcf:citekey order="10">_react_2018</bcf:citekey>
+    <bcf:citekey order="11">javascriptframework</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" name="apa/global/" type="entry" sortscheme="apa" sortnamekeyscheme="global" labelprefix="">
   <bcf:sorting>
