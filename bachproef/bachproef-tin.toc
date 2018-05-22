@@ -120,23 +120,29 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {3}Methodologie}{33}{chapter.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Conclusie}{35}{chapter.4}
+\contentsline {chapter}{\numberline {4}Onderzoek}{35}{chapter.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Onderzoeksvoorstel}{37}{appendix.A}
+\contentsline {section}{\numberline {4.1}Theoretisch onderzoek}{35}{section.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.1}Introductie}{37}{section.A.1}
+\contentsline {section}{\numberline {4.2}Praktisch onderzoek}{35}{section.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.2}State-of-the-art}{38}{section.A.2}
+\contentsline {chapter}{\numberline {5}Conclusie}{37}{chapter.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.2.1}Wat zijn JavaScript frameworks?}{38}{subsection.A.2.1}
+\contentsline {chapter}{\numberline {A}Onderzoeksvoorstel}{39}{appendix.A}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.2.2}Gelijkaardige onderzoeken}{38}{subsection.A.2.2}
+\contentsline {section}{\numberline {A.1}Introductie}{39}{section.A.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.3}Methodologie}{38}{section.A.3}
+\contentsline {section}{\numberline {A.2}State-of-the-art}{40}{section.A.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.4}Verwachte resultaten}{38}{section.A.4}
+\contentsline {subsection}{\numberline {A.2.1}Wat zijn JavaScript frameworks?}{40}{subsection.A.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.5}Verwachte conclusies}{39}{section.A.5}
+\contentsline {subsection}{\numberline {A.2.2}Gelijkaardige onderzoeken}{40}{subsection.A.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliografie}{41}{appendix*.45}
+\contentsline {section}{\numberline {A.3}Methodologie}{40}{section.A.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.4}Verwachte resultaten}{40}{section.A.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.5}Verwachte conclusies}{41}{section.A.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Bibliografie}{43}{appendix*.45}
 \contentsfinish 
