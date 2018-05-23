@@ -2302,17 +2302,26 @@
     <bcf:datasource type="file" datatype="bibtex">../voorstel/biblio.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1">Introduction_2018</bcf:citekey>
-    <bcf:citekey order="2">clifton_what_2003</bcf:citekey>
-    <bcf:citekey order="3">eskelin_software_2001</bcf:citekey>
-    <bcf:citekey order="4">_benchmark_????</bcf:citekey>
-    <bcf:citekey order="5">atwood_understanding_2008</bcf:citekey>
-    <bcf:citekey order="6">_model-view-controller_2014</bcf:citekey>
-    <bcf:citekey order="7">github_front-end_????</bcf:citekey>
-    <bcf:citekey order="8">_angular_2018</bcf:citekey>
-    <bcf:citekey order="9">_vue_2018</bcf:citekey>
-    <bcf:citekey order="10">_react_2018</bcf:citekey>
-    <bcf:citekey order="11">javascriptframework</bcf:citekey>
+    <bcf:citekey order="1">github_front-end_????</bcf:citekey>
+    <bcf:citekey order="2">Introduction_2018</bcf:citekey>
+    <bcf:citekey order="3">clifton_what_2003</bcf:citekey>
+    <bcf:citekey order="4">eskelin_software_2001</bcf:citekey>
+    <bcf:citekey order="5">_benchmark_????</bcf:citekey>
+    <bcf:citekey order="6">atwood_understanding_2008</bcf:citekey>
+    <bcf:citekey order="7">_model-view-controller_2014</bcf:citekey>
+    <bcf:citekey order="8">github_front-end_????</bcf:citekey>
+    <bcf:citekey order="9">_angular_2018</bcf:citekey>
+    <bcf:citekey order="10">_vue_2018</bcf:citekey>
+    <bcf:citekey order="11">_react_2018</bcf:citekey>
+    <bcf:citekey order="12">github_front-end_????</bcf:citekey>
+    <bcf:citekey order="13">_angular_2018-1</bcf:citekey>
+    <bcf:citekey order="14">_angular_2018-1</bcf:citekey>
+    <bcf:citekey order="15">_made_????</bcf:citekey>
+    <bcf:citekey order="16">_made_????-1</bcf:citekey>
+    <bcf:citekey order="17">_testing_2018</bcf:citekey>
+    <bcf:citekey order="18">_testing_2018-2</bcf:citekey>
+    <bcf:citekey order="19">_testing_2018-1</bcf:citekey>
+    <bcf:citekey order="20">javascriptframework</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" name="apa/global/" type="entry" sortscheme="apa" sortnamekeyscheme="global" labelprefix="">
   <bcf:sorting>

@@ -15,7 +15,8 @@ In dit onderdeel zal ten eerste de historiek van JavaScript beschreven worden. H
 \subsection{Historiek}
 \label{sec:JavaScript_Historiek}
 
-JavaScript is uitgevonden in 1995 bij Netscape Communications. Zij hebben ook de Netscape browser gemaakt. In die tijd was Java de populaire taal voor het web. Hierdoor hebben ze besloten om de syntax van JavaScript op die van Java te baseren. De eerste versie van JavaScript was onder de naam Mocha in 1995. Hierna werd deze hernoemd naar LiveScript. Ten slotte werd de taal verandert naar JavaScript eind 1995.JavaScript is gestandaardiseerd bij ECMA International. Deze gestandaardiseerde versie van JavaScript noemen we ECMAScript. Deze gedraagt zich hetzelfde in alle applicaties die deze standaard accepteren.
+JavaScript is uitgevonden in 1995 bij Netscape Communications. Zij hebben ook de Netscape browser gemaakt. In die tijd was Java de populaire taal voor het web. Hierdoor hebben ze besloten om de syntax van JavaScript op die van Java te baseren. De eerste versie van JavaScript was onder de naam Mocha in 1995. Hierna werd deze hernoemd naar LiveScript. Ten slotte werd de taal verandert naar JavaScript eind 1995.
+JavaScript is gestandaardiseerd bij ECMA International. Deze gestandaardiseerde versie van JavaScript noemen we ECMAScript. Deze gedraagt zich hetzelfde in alle applicaties die deze standaard accepteren.
 
 \subsection{Eigenschappen}
 \label{sec:JavaScript_Eigenschappen}
@@ -28,7 +29,7 @@ Javascript is een dynamisch getypeerde taal. Dit betekend dat het type van een v
 
 JavaScript bied meer vrijheid ten opzichte van Java. Je moet niet elke variabele, klasse of methode declareren. Methodes kunnen niet publiek, privaat of beschermd zijn. Er is ook geen nood om interfaces te implementeren. Parameters en functie retourneerwaarden zijn ook niet expliciet getypeerd. Dit kan veel tijd besparen maar ook voor moeilijk te vinden bugs zorgen.
 
-Java is klasse gebaseerd, objecten zijn onderverdeeld in klassen en instanties. Er bestaat en vaste hiërarchie door de klassen heen. Klassen en instanties kunnen niet dynamisch attributen of methoden toegevoegd krijgen. Anderzijds is JavaScript object georiënteerd. Dit betekent dat er geen verschil gemaakt word tussen types van objecten. Overerving is door middel van het prototype systeem. Attributen en methoden kunnen dynamisch aan objecten worden toegevoegd \autocite{Introduction_2018}.
+Java is klasse gebaseerd, objecten zijn onderverdeeld in klassen en instanties. Er bestaat en vaste hiërarchie door de klassen heen. Klassen en instanties kunnen niet dynamisch attributen of methoden toegevoegd krijgen. Anderzijds is JavaScript object georiënteerd. Dit betekent dat er geen verschil gemaakt word tussen types van objecten. Overerving kan bereikt worden met behulp van prototypes. Attributen en methoden kunnen dynamisch aan objecten worden toegevoegd \autocite{Introduction_2018}.
 
 \section{Frameworks}
 \label{sec:Frameworks}
@@ -87,13 +88,14 @@ De controller kan events opvangen en hierop reageren. Meestal worden er dan bewe
 
 In dit hoofdstuk gaan we alle gekozen JavaScript frameworks bespreken samen met hun basisprincipes. Daarna zal bij elk framework in detail besproken worden hoe het renderen gebeurt. Dit heeft namelijk een groot effect op performance.
 
-JavaScript wordt alsmaar populairder met de toename aan frameworks en libraries die gemaakt worden. Voor dit project zijn er drie frameworks gekozen om te vergelijken. De gekozen frameworks zijn React, Angular en Vue. De reden waarom deze gekozen zijn, is omdat deze de drie ‘populairste’ frameworks zijn op dit moment. Hierdoor is er meer ondersteuning en vernieuwing door de community. Ten slotte word er op elk framework iets dieper ingegaan en meerdere basisbegrippen van elk framework worden besproken. Om te bepalen welke frameworks het populairste zijn werd er gekeken naar hoeveel sterren het framework heeft op GitHub \autocite{github_front-end_????}.
+JavaScript wordt alsmaar populairder met de toename aan frameworks en libraries die gemaakt worden. Voor dit project zijn er drie frameworks gekozen om te vergelijken. De gekozen frameworks zijn React, Angular en Vue. De reden waarom deze gekozen zijn, is omdat deze de drie ‘populairste’ frameworks zijn op dit moment. Hierdoor is er meer ondersteuning en vernieuwing door de community. Ten slotte word er op elk framework iets dieper ingegaan en meerdere basisbegrippen van elk framework worden besproken. Om te bepalen welke frameworks het populairste zijn werd er gekeken naar hoeveel sterren, watchers en forks het framework heeft op GitHub \autocite{github_front-end_????}.
 
 \subsection{Angular}
 \label{sec:JavaScript_Frameworks_Angular}
-Laatste versie: Version 6.0.2
+Versie op moment van schrijven: Version 6.0.2
 
-Angular is een framework om applicaties te bouwen met HTML en Typescript. Angular zelf is ook geschreven in Typescript. De basis bouwstenen die Angular op dit moment aanbiedt zijn module, component en service.Alle informatie over deze basisprincipes komt uit de officiële documentatie van Angular \autocite{_angular_2018}.
+Angular is een framework om applicaties te bouwen met HTML en Typescript. Angular zelf is ook geschreven in Typescript. De basis bouwstenen die Angular op dit moment aanbiedt zijn module, component en service.
+Alle informatie over deze basisprincipes komt uit de officiële documentatie van Angular \autocite{_angular_2018}.
 
 \subsubsection{Module}
 \label{sec:Angular_Module}
@@ -181,9 +183,10 @@ Deze functionaliteit is in Angular geïmplementeerd door middel van zones. Een z
 
 \subsection{Vue}
 \label{sec:JavaScript_Frameworks_Vue}
-Laatste versie: v2.5.16
+Versie op moment van schrijven: v2.5.2
 
-Vue is een framework dat geïnspireerd is op het MVVM patroon. Een Vue project bestaat over één root Vue instantie. Hierna verdeeld in een boom van herbruikbare components.Alle informatie over de basisprincipes in Vue komt uit de officiële Vue documentatie \autocite{_vue_2018}.
+Vue is een framework dat geïnspireerd is op het MVVM patroon. Het connecteert de view en de model met behulp van two way data-binding. Een Vue project bestaat over één root Vue instantie. Hierna verdeeld in een boom van herbruikbare components.
+Alle informatie over de basisprincipes in Vue komt uit de officiële Vue documentatie \autocite{_vue_2018}.
 
 \subsubsection{Component}
 \label{sec:Vue_Component}
@@ -253,9 +256,10 @@ In het volgende en laatste hoofdstuk zullen we bespreken hoe het laatste framewo
 
 \subsection{React}
 \label{sec:JavaScript_Frameworks_React}
-Laatste versie: v16.3.2
+Versie op moment van schrijven: v16.3.2
 
-Volgens React is het een declaratieve, effectieve en flexibele JavaScript library om interfaces te bouwen. Het is inderdaad een libary, maar de mogelijkheden die React biedt leiden tot veel discussie of het nu een library of een framework is. In dit onderzoek werd React ook gekozen omdat het samen met de 2 andere frameworks bij de 3 populairste methodes hoort voor web development. De reden dat tot deze discussie leidt is omdat react enkel de view is. React bestaat uit een virtuele DOM die gebruikt wordt voor het efficiënt re-renderen van de DOM. Hiernaast zijn er ook components die een eigen state hebben.Alle informatie over de basisprincipes in React komt uit de officiële React documentatie \autocite{_react_2018}.
+Volgens React is het een declaratieve, effectieve en flexibele JavaScript library om interfaces te bouwen. Het is inderdaad een libary, maar de mogelijkheden die React biedt leiden tot veel discussie of het nu een library of een framework is. In dit onderzoek werd React ook gekozen omdat het samen met de twee andere frameworks bij de drie populairste methodes hoort voor web development. De reden dat tot deze discussie leidt is omdat React enkel de view voorziet. React bestaat uit een virtuele DOM die gebruikt wordt voor het efficiënt re-renderen van de DOM. Hiernaast zijn er ook components die een eigen state hebben.
+Alle informatie over de basisprincipes in React komt uit de officiële React documentatie \autocite{_react_2018}.
 
 \subsubsection{Component}
 \label{sec:React_Component}
@@ -303,13 +307,13 @@ function Child(props) {
 }
 \end{verbatim}
 
-Elke react component heeft ook een state. Als de state van een component aanpast zal React de components proberen re-renderen. React zal dit enkel en alleen doen indien dit nodig is voor de gebruiker.
+Elke React component heeft ook een state. Als de state van een component aanpast zal React de components proberen re-renderen. React zal dit enkel en alleen doen indien dit nodig is voor de gebruiker.
 
 \subsubsection{Rendering en Updaten van de view}
 \label{sec:React_Rendering_Updaten}
 In dit onderdeel zal ik voor React uitleggen hoe het renderen en updaten van een view in zijn werk gaat. Net zoals bij Vue zal React werken met een Virtual DOM. React is namelijk het eerste framework dat met deze render oplossing is gekomen. Zij hebben dit concept ook verder uitgewerkt.
 
-Als in react de state aagepast word dan zal een component gemarkeerd worden als ‘dirty’. Alle DOM event listeners zijn in React omhult in hun eigen event listeners. Hierdoor wordt door elke muisklik of ander event een naamloze functie van React opgeroepen worden. Als een component zijn state aangepast wordt dan zal die gemarkeerd worden als ‘dirty’.
+Als in React de state aagepast word dan zal een component gemarkeerd worden als ‘dirty’. Alle DOM event listeners zijn in React omhult in hun eigen event listeners. Hierdoor wordt door elke muisklik of ander event een naamloze functie van React opgeroepen worden. Als een component zijn state aangepast wordt dan zal die gemarkeerd worden als ‘dirty’.
 
 Nu is de component gemarkeerd als dirty. Ten eerste zullen we de component updaten als batch update. Dit betekend dat als de state meerdere keren vlak na elkaar aangepast word React maar 1 keer zal rerenderen. Hierna zal er nogmaals gekeken worden of de state aangepast is of er een forceUpdate aangeroepen werd.
 
@@ -335,10 +339,10 @@ De state van een applicatie is de plek waar data vandaan komt. Om een web applic
 	\item Data van de API kan aankomen.
 \end{itemize}
 
-\subsection{Vergelijking criteria}
+\section{Vergelijking criteria}
 \label{sec:Vergelijking_Criteria}
 
-\subsubsection{Theoretische vergelijking}
+\subsection{Theoretische vergelijking}
 \label{sec:Theoretische_Vergelijking}
 In dit onderdeel zullen we alle criteria bespreken die we kunnen afleiden uit het literatuur onderzoek en de bronnen. Eerst worden alle criteria opgesomd.
 
@@ -364,7 +368,6 @@ De bruikbaarheid en developer vriendelijkheid van een framework zijn belangrijk.
 
 \begin{itemize}
 	\item Bestaat er een tool om code te genereren? In plaats van herhaalbare code te blijven schrijven bespaard code generatie veel tijd voor een developer.
-	\item Welke JavaScript taal ondersteund het framework? Er zijn meerdere versies en soorten van JavaScript gebaseerde talen.
 \end{itemize}
 
 \subparagraph{Stabiliteit}
@@ -378,7 +381,6 @@ Er is geen enkele methode die ons toestaat om de stabiliteit van een framework t
 JavaScript wordt uitgevoerd in de browser en het is belangrijk dat het framework ondersteund word door zo veel mogelijk browsers. Mobiele apparaten zijn ook een belangrijk onderdeel, een groot deel van de gebruikers gebruikt zijn mobiel toestel om te surfen op het internet.
 
 \begin{itemize}
-	\item Welke versies van JavaScript is de framework voor gebouwd? Op dit moment is ECMAScript 6 de nieuwste versie van JavaScript. Deze is echter nog niet in alle browsers compleet beschikbaar. Alle ECMAScript 6 functionaliteit moet dus gecompileerd worden naar ECMAScript 5.
 	\item Ondersteunt het framework mobiele apparaten? Tegenwoordig bestaat het grootste deel van de internet gebruikers uit mobiele apparaten. Het is dus belangrijk om deze te ondersteunen.
 \end{itemize}
 
@@ -398,24 +400,18 @@ Het is belangrijk dat de frameworks getest kunnen worden. Veel development teams
 	\item Ondersteund het framework integratie tests? Integratie tests zorgen ervoor dat de gehele applicatie getest kan worden.
 \end{itemize}
 
-\subsubsection{Praktische vergelijking}
+\subsection{Praktische vergelijking}
 \label{sec:Praktische_Vergelijking}
 In dit onderdeel zullen alle metrieken besproken worden die getest worden in deze proef. Er worden twee soorten metrieken besproken. De eerste soort zullen meten op software complexiteit en de tweede soort op performance.
-
-\subparagraph{Lines of code }
-Lines of code is de eerste metriek die we zullen gaan hanteren. Lines of code verwijst meestal naar de lijnen code die niet in commentaar staan of lege lijnen zijn. Toen men in assembly languages code schreef was deze metriek zeer duidelijk. Het aantal lijnen code kwam overeen met het aantal lijnen instructies. Tegenwoordig is dit al heel wat veranderd. Lines of code is complexer geworden door de manier waarop programmeertalen en programma’s gestructureerd zijn. Nu zijn er twee methodieken om lines of code te tellen. De eerste is physical lines of code (SLOC) dit zijn alle lijnen code min de lege lijnen en lijnen commentaar. Hiernaast is er ook de logical lines of code (LLOC). Deze tweede methode telt het aantal uitvoerbare statements in de code.
-
-\subparagraph{Cyclomatic complexity}
-Cyclomatic complexity meet het aantal lineair onafhankelijke paden door de broncode van een programma. Dit betekend het aantal unieke paden die doorheen de applicatie gaan. Deze index kan hoog zijn in zeer complexe applicaties en zou niet hoog mogen zijn in simpele applicaties. Hieruit kunnen we afleiden dat code geschreven met veel condities een hoge cyclomatic complexity zal hebben.
 
 \subparagraph{First meaningfull paint}
 First meaningfull paint is de tijd waarop de applicatie initieel laad en is cruciaal bij de gebruiker. De eerste momenten waarop een webstie laad geven de gebruiker een gevoel hoe performant de website is. Hoe kleiner deze initiële tijd is hoe beter.
 
-\subparagraph{Tarief}
-Het tarief is het aantal werk dat een framework kan doen binnen een bepaalde tijdspanne is een belangrijke factor bij performance. Dit is ook cruciaal voor de gebruiker. Het tarief zullen we meten aan de hand van meerdere tests. Elke test zal een verschillende hoeveelheid werk hebben. We gaan testen hoe lang het duurt voor een framework om een variabel aantal entiteiten te veranderen.
-
 \subparagraph{Grootte}
 De grootte van de applicatie is te zien in de Chrome netwerk tab. Hoe kleiner deze file hoe minder de gebruiker zal moeten downloaden. Dit zorgt ook voor een sneller en performanter gevoel. Deze pijler hangt af van te grootte van het framework en extra afhankelijkheden die we toevoegen in het project. Om dit zo eerlijk mogelijk te laten verlopen zal in elk project zo min mogelijk afhankelijkheden toegevoegd worden. Zo kan elk framework zo correct mogelijk vergeleken worden.
+
+\subparagraph{Tarief}
+Het tarief is het aantal werk dat een framework kan doen binnen een bepaalde tijdspanne is een belangrijke factor bij performance. Dit is ook cruciaal voor de gebruiker. Het tarief zullen we meten aan de hand van meerdere tests. Elke test zal een verschillende hoeveelheid werk hebben. We gaan testen hoe lang het duurt voor een framework om een variabel aantal entiteiten te veranderen.
 
 
 
