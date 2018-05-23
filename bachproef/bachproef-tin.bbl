@@ -189,6 +189,64 @@
       \verb https://github.com/collections/front-end-javascript-frameworks
       \endverb
     \endentry
+    \entry{koretskyi_angular_2017}{online}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=2b546c4cb16335e3bf1bc8fd131a8556}{%
+           family={Koretskyi},
+           familyi={K\bibinitperiod},
+           given={Maxim},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{2b546c4cb16335e3bf1bc8fd131a8556}
+      \strng{fullhash}{2b546c4cb16335e3bf1bc8fd131a8556}
+      \strng{authornamehash}{2b546c4cb16335e3bf1bc8fd131a8556}
+      \strng{authorfullhash}{2b546c4cb16335e3bf1bc8fd131a8556}
+      \field{sortinit}{K}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{{DOM} updates that are triggered by the model change is the key feature of all modern front-end frameworks and the Angular is no exception.}
+      \field{day}{19}
+      \field{month}{6}
+      \field{title}{Angular in depth}
+      \field{titleaddon}{The mechanics of {DOM} updates in Angular}
+      \field{year}{2017}
+      \field{dateera}{ce}
+      \verb{url}
+      \verb https://blog.angularindepth.com/the-mechanics-of-dom-updates-in-angular-3b2970d5c03d
+      \endverb
+    \endentry
+    \entry{kurian_medium_2017}{online}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=d115e2de1127519c117a7252205efcdb}{%
+           family={Kurian},
+           familyi={K\bibinitperiod},
+           given={George},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{d115e2de1127519c117a7252205efcdb}
+      \strng{fullhash}{d115e2de1127519c117a7252205efcdb}
+      \strng{authornamehash}{d115e2de1127519c117a7252205efcdb}
+      \strng{authorfullhash}{d115e2de1127519c117a7252205efcdb}
+      \field{sortinit}{K}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{I have been trying to understand how virtual {DOM} works and though on an high level it was clear. I was looking for something that could explain to me in more detail. With lot of searches and being unsuccessful to get exactly what I was looking for, I finally decided to look into the react and react-dom codes so that I get better understanding how things work.}
+      \field{day}{24}
+      \field{month}{1}
+      \field{title}{Medium}
+      \field{titleaddon}{How Virtual-{DOM} and diffing works in React}
+      \field{year}{2017}
+      \field{dateera}{ce}
+      \verb{url}
+      \verb https://medium.com/@gethylgeorge/how-virtual-dom-and-diffing-works-in-react-6fc805f9f84e
+      \endverb
+    \endentry
     \entry{_made_????}{online}{}
       \field{sortinit}{M}
       \field{sortinithash}{c26a05ef03e4429073ed5c825140fac3}
@@ -211,6 +269,64 @@
       \verb https://github.com/facebook/react/wiki/Sites-Using-React
       \endverb
     \endentry
+    \entry{mikami_medium_2017}{online}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=ade0c6c0e3260bcfffbab23d9f17daa1}{%
+           family={Mikami},
+           familyi={M\bibinitperiod},
+           given={Kohei},
+           giveni={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{ade0c6c0e3260bcfffbab23d9f17daa1}
+      \strng{fullhash}{ade0c6c0e3260bcfffbab23d9f17daa1}
+      \strng{authornamehash}{ade0c6c0e3260bcfffbab23d9f17daa1}
+      \strng{authorfullhash}{ade0c6c0e3260bcfffbab23d9f17daa1}
+      \field{sortinit}{M}
+      \field{sortinithash}{c26a05ef03e4429073ed5c825140fac3}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{“The template looks just like your typical {HTML} document, not like {JSX} in React. How does Vue use their Virtual {DOM} internally?”}
+      \field{day}{13}
+      \field{month}{12}
+      \field{title}{Medium}
+      \field{titleaddon}{Understanding Rendering Process with Virtual {DOM} In Vue.js}
+      \field{year}{2017}
+      \field{dateera}{ce}
+      \verb{url}
+      \verb https://medium.com/@koheimikami/understanding-rendering-process-with-virtual-dom-in-vue-js-a6e602811782
+      \endverb
+    \endentry
+    \entry{mishra_hackernoon_2017}{online}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=f98881625ca623b17c43bc2708407246}{%
+           family={Mishra},
+           familyi={M\bibinitperiod},
+           given={Rupesh},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{f98881625ca623b17c43bc2708407246}
+      \strng{fullhash}{f98881625ca623b17c43bc2708407246}
+      \strng{authornamehash}{f98881625ca623b17c43bc2708407246}
+      \strng{authorfullhash}{f98881625ca623b17c43bc2708407246}
+      \field{sortinit}{M}
+      \field{sortinithash}{c26a05ef03e4429073ed5c825140fac3}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{{ReactJS} does not update the Real {DOM} directly but it updates the Virtual {DOM}. This causes a great performance benefit for {ReactJS}. In this article we will see why updating the Real {DOM} is slow, what is Virtaul {DOM}, and how updating Virtual {DOM} increase the performance?}
+      \field{day}{7}
+      \field{month}{5}
+      \field{title}{Hackernoon}
+      \field{titleaddon}{Virtual {DOM} in {ReactJS}}
+      \field{year}{2017}
+      \field{dateera}{ce}
+      \verb{url}
+      \verb https://hackernoon.com/virtual-dom-in-reactjs-43a3fdb1d130
+      \endverb
+    \endentry
     \entry{_model-view-controller_2014}{online}{}
       \field{sortinit}{M}
       \field{sortinithash}{c26a05ef03e4429073ed5c825140fac3}
@@ -224,6 +340,35 @@
       \field{dateera}{ce}
       \verb{url}
       \verb https://docs.microsoft.com/en-us/previous-versions/msp-n-p/ff649643(v=pandp.10)
+      \endverb
+    \endentry
+    \entry{precht_thoughtram_2016}{online}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=09387c621c3a4f3e02a2fe7481a9aa09}{%
+           family={Precht},
+           familyi={P\bibinitperiod},
+           given={Pascal},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{09387c621c3a4f3e02a2fe7481a9aa09}
+      \strng{fullhash}{09387c621c3a4f3e02a2fe7481a9aa09}
+      \strng{authornamehash}{09387c621c3a4f3e02a2fe7481a9aa09}
+      \strng{authorfullhash}{09387c621c3a4f3e02a2fe7481a9aa09}
+      \field{sortinit}{P}
+      \field{sortinithash}{24100cef455d7974167575052c29146e}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{{NG}-{NL} has happened and it was awesome! I had the honour of giving a talk about change detection in Angular and it seemed to be a huge success as attendees liked it a lot. With this article, we’d like to transform the talk into a written version, so everyone can read about how Angular’s change detection works and how to make it faster for our use cases. If you’re interested in the talk, you can view the slides here and as soon as the talk recording is up, you'll find it here as well watch the recording on Youtube.}
+      \field{day}{18}
+      \field{month}{12}
+      \field{title}{Thoughtram}
+      \field{titleaddon}{{ANGULAR} {CHANGE} {DETECTION} {EXPLAINED}}
+      \field{year}{2016}
+      \field{dateera}{ce}
+      \verb{url}
+      \verb https://blog.thoughtram.io/angular/2016/02/22/angular-2-change-detection-explained.html
       \endverb
     \endentry
     \entry{_react_2018}{online}{}
@@ -293,6 +438,20 @@
       \field{dateera}{ce}
       \verb{url}
       \verb https://vuejs.org/v2/guide/
+      \endverb
+    \endentry
+    \entry{_vue_2018-1}{online}{}
+      \field{sortinit}{V}
+      \field{sortinithash}{555737dafdcf1396ebfeae5822e5bde2}
+      \field{labeldatesource}{}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Now it’s time to take a deep dive! One of Vue’s most distinct features is the unobtrusive reactivity system. Models are just plain {JavaScript} objects. When you modify them, the view updates. It makes state management simple and intuitive, but it’s also important to understand how it works to avoid some common gotchas. In this section, we are going to dig into some of the lower-level details of Vue’s reactivity system.}
+      \field{title}{Vue Reactivity in Depth}
+      \field{titleaddon}{Reactivity in Depth}
+      \field{year}{2018}
+      \field{dateera}{ce}
+      \verb{url}
+      \verb https://vuejs.org/v2/guide/reactivity.html
       \endverb
     \endentry
   \endsortlist

@@ -86,7 +86,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.5.4}Data binding}{29}{subsection.2.5.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.5.5}Application state}{29}{subsection.2.5.5}
+\contentsline {subsection}{\numberline {2.5.5}Application state}{30}{subsection.2.5.5}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.6}Vergelijking criteria}{30}{section.2.6}
 \defcounter {refsection}{0}\relax 
@@ -120,13 +120,13 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.1}Theoretische vergelijking}{35}{section.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Praktische vergelijking}{35}{section.4.2}
+\contentsline {section}{\numberline {4.2}Praktische vergelijking}{36}{section.4.2}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.2.1}Grootte}{37}{subsection.4.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.2}First meaningfull paint}{37}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.2}First meaningfull paint}{38}{subsection.4.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.3}Tarief}{37}{subsection.4.2.3}
+\contentsline {subsection}{\numberline {4.2.3}Tarief}{38}{subsection.4.2.3}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {5}Conclusie}{39}{chapter.5}
 \defcounter {refsection}{0}\relax 

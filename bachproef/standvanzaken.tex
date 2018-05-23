@@ -146,7 +146,7 @@ Angular gebruikt het principe genaamd Dependency Injection. Dit wordt doorheen h
 
 \subsubsection{Rendering en Updaten van de view}
 \label{sec:Angular_Rendering_Updaten}
-Nu alle basisbegrippen van dit framework uitgelegd zijn kunnen we het hebben over het renderen van pagina’s en/of componenten. Dit is een belangrijk onderdeel om de theoretische snelheid te kunnen begrijpen van een framework. Verder in deze proef zal hetzelfde gedaan worden voor elk ander framework.
+Nu alle basisbegrippen van dit framework uitgelegd zijn kunnen we het hebben over het renderen van pagina’s en/of componenten. Dit is een belangrijk onderdeel om de theoretische snelheid te kunnen begrijpen van een framework. Verder in deze proef zal hetzelfde gedaan worden voor elk ander framework. Alle informatie uit dit hoofdstuk is gevonden in de officiële Angular documentatie \autocite{_angular_2018} en artikels van \textcite{precht_thoughtram_2016} en \textcite{koretskyi_angular_2017}.
 
 Op het eerste zicht lijkt het proces zeer simpel. Als een data binding in Angular verandert van waarde dan zal de view hernieuw gerenderd worden. Achter dit simpele principe zit echter een zeer ingewikkeld systeem. Om dit te begrijpen zal ik het eerst hebben over de interne representatie van een applicatie in Angular.
 
@@ -232,7 +232,7 @@ In de Vue documentatie staat er een waarschuwing. Als men gebruik maakt van deze
 
 \subsubsection{Rendering en Updaten van de view}
 \label{sec:Vue_Rendering_Updaten}
-Net zoals bij Angular zullen we na deze basisbegrippen uitgelegd te hebben het hebben over het renderen en updaten van de view. Vue gebruikt hiervoor het concept van een Virtual DOM. De Virtual DOM als begrip en idee werd eerst geïntroduceerd door React. Hierna zijn vele andere frameworks dit concept ook gaan gebruiken waaronder ook Vue.
+Net zoals bij Angular zullen we na deze basisbegrippen uitgelegd te hebben het hebben over het renderen en updaten van de view. Vue gebruikt hiervoor het concept van een Virtual DOM. De Virtual DOM als begrip en idee werd eerst geïntroduceerd door React. Hierna zijn vele andere frameworks dit concept ook gaan gebruiken waaronder ook Vue. Alle informatie in dit hoofdstuk komt uit de officiële Vue documentatie \autocite{_vue_2018-1} en het artikel van \textcite{mikami_medium_2017}.
 
 De Virtual DOM is simpelweg een JavaScript object dat de DOM voorsteld. Het is net zoals de gewone DOM een boomstructuur die alle elementen beschrijft. Je applicatie zal de Virtual DOM updaten en nooit directe manipulaties doen op de DOM.
 
@@ -311,7 +311,7 @@ Elke React component heeft ook een state. Als de state van een component aanpast
 
 \subsubsection{Rendering en Updaten van de view}
 \label{sec:React_Rendering_Updaten}
-In dit onderdeel zal ik voor React uitleggen hoe het renderen en updaten van een view in zijn werk gaat. Net zoals bij Vue zal React werken met een Virtual DOM. React is namelijk het eerste framework dat met deze render oplossing is gekomen. Zij hebben dit concept ook verder uitgewerkt.
+In dit onderdeel zal ik voor React uitleggen hoe het renderen en updaten van een view in zijn werk gaat. Net zoals bij Vue zal React werken met een Virtual DOM. React is namelijk het eerste framework dat met deze render oplossing is gekomen. Zij hebben dit concept ook verder uitgewerkt. Alle informatie uit dit hoofdstuk komt uit de officiële React documentatie \autocite{_react_2018} en de artikels van \textcite{mishra_hackernoon_2017} en \textcite{kurian_medium_2017}.
 
 Als in React de state aagepast word dan zal een component gemarkeerd worden als ‘dirty’. Alle DOM event listeners zijn in React omhult in hun eigen event listeners. Hierdoor wordt door elke muisklik of ander event een naamloze functie van React opgeroepen worden. Als een component zijn state aangepast wordt dan zal die gemarkeerd worden als ‘dirty’.
 

@@ -2311,17 +2311,25 @@
     <bcf:citekey order="7">_model-view-controller_2014</bcf:citekey>
     <bcf:citekey order="8">github_front-end_????</bcf:citekey>
     <bcf:citekey order="9">_angular_2018</bcf:citekey>
-    <bcf:citekey order="10">_vue_2018</bcf:citekey>
-    <bcf:citekey order="11">_react_2018</bcf:citekey>
-    <bcf:citekey order="12">github_front-end_????</bcf:citekey>
-    <bcf:citekey order="13">_angular_2018-1</bcf:citekey>
-    <bcf:citekey order="14">_angular_2018-1</bcf:citekey>
-    <bcf:citekey order="15">_made_????</bcf:citekey>
-    <bcf:citekey order="16">_made_????-1</bcf:citekey>
-    <bcf:citekey order="17">_testing_2018</bcf:citekey>
-    <bcf:citekey order="18">_testing_2018-2</bcf:citekey>
-    <bcf:citekey order="19">_testing_2018-1</bcf:citekey>
-    <bcf:citekey order="20">javascriptframework</bcf:citekey>
+    <bcf:citekey order="10">_angular_2018</bcf:citekey>
+    <bcf:citekey order="11">precht_thoughtram_2016</bcf:citekey>
+    <bcf:citekey order="12">koretskyi_angular_2017</bcf:citekey>
+    <bcf:citekey order="13">_vue_2018</bcf:citekey>
+    <bcf:citekey order="14">_vue_2018-1</bcf:citekey>
+    <bcf:citekey order="15">mikami_medium_2017</bcf:citekey>
+    <bcf:citekey order="16">_react_2018</bcf:citekey>
+    <bcf:citekey order="17">_react_2018</bcf:citekey>
+    <bcf:citekey order="18">mishra_hackernoon_2017</bcf:citekey>
+    <bcf:citekey order="19">kurian_medium_2017</bcf:citekey>
+    <bcf:citekey order="20">github_front-end_????</bcf:citekey>
+    <bcf:citekey order="21">_angular_2018-1</bcf:citekey>
+    <bcf:citekey order="22">_angular_2018-1</bcf:citekey>
+    <bcf:citekey order="23">_made_????</bcf:citekey>
+    <bcf:citekey order="24">_made_????-1</bcf:citekey>
+    <bcf:citekey order="25">_testing_2018</bcf:citekey>
+    <bcf:citekey order="26">_testing_2018-2</bcf:citekey>
+    <bcf:citekey order="27">_testing_2018-1</bcf:citekey>
+    <bcf:citekey order="28">javascriptframework</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" name="apa/global/" type="entry" sortscheme="apa" sortnamekeyscheme="global" labelprefix="">
   <bcf:sorting>
