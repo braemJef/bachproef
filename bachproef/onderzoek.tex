@@ -23,7 +23,7 @@ Alle resultaten zijn aanwezig in tabel \ref{table:theoretische_vergelijking}. Hi
 	\item Op alle andere vlakken scoren de drie frameworks gelijk.
 \end{itemize}
 
-\begin{table}[]
+\begin{table}[h]
 	\centering
 	\caption{Theoretische vergelijking}
 	\label{table:theoretische_vergelijking}
@@ -57,15 +57,15 @@ Alle resultaten zijn aanwezig in tabel \ref{table:theoretische_vergelijking}. Hi
 	\end{tabular}
 \end{table}
 
-\begin{figure}[h]
-	\caption{Angular, Vue en React google trends relatie}
+\begin{figure}[h!]
+	\caption{Angular, Vue en React google trends relatie \autocite{_google_2012}}
 	\centering
 	\includegraphics[width=1\textwidth]{img/googleTrends.png}
 	\label{fig:google_trends}
 \end{figure}
 
-\begin{figure}[h]
-	\caption{Angular, Vue en React stackoverflow trends relatie}
+\begin{figure}[h!]
+	\caption{Angular, Vue en React stackoverflow trends relatie \autocite{_stackoverflow_2009}}
 	\centering
 	\includegraphics[width=0.6\textwidth]{stackoverflowTrends.png}
 	\label{fig:stackoverflow_trends}
@@ -94,7 +94,7 @@ Hier zullen de filesizes besproken worden die in de netwerk tab van de browser g
 
 In tabel \ref{table:file_sizes} zien we dat React en Vue zeer sterk bij elkaar liggen met amper 30 kilobytes verschil. Angular daarentegen heeft een geweldige grootte van 3160 kilobytes. De reden hiervoor is omdat Angular een compleet framework meestuurd. Als deze applicaties groter zouden zijn dan zou het verschil kleiner geweest zijn. Dit is iets waar in het begin van deze tests geen rekening mee gehouden is maar waar wel veel uit geleerd kan worden.
 
-\begin{table}[]
+\begin{table}[h]
 	\centering
 	\caption{Grootte in kilobytes}
 	\label{table:file_sizes}
@@ -111,7 +111,7 @@ In dit onderdeel zullen we de first meaningfull paint resultaten bespreken. Elke
 
 In tabel \ref{table:first_meaningfull_paint} zien we dat Vue en React weer zeer sterke competitie voeren met elkaar. Angular is hier ook weer de uitzondering met tijden die tien keer langer duren dan Vue en React. De reden hiervoor is omdat de software die gebruikt is om deze tijden te meten langer zal laden hoe groter de grootte van het bestand is. Dit is een gevolg uit de test in het vorige hoofdstuk \ref{sec:grootte}.
 
-\begin{table}[]
+\begin{table}[h]
 	\centering
 	\caption{First meaningfull paint in milliseconden}
 	\label{table:first_meaningfull_paint}

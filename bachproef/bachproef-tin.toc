@@ -82,7 +82,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Component}{27}{section*.29}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Rendering en Updaten van de view}{29}{section*.30}
+\contentsline {subsubsection}{Rendering en Updaten van de view}{28}{section*.30}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.5.4}Data binding}{29}{subsection.2.5.4}
 \defcounter {refsection}{0}\relax 
@@ -94,15 +94,15 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subparagraph}{Populariteit}{30}{section*.31}
 \defcounter {refsection}{0}\relax 
-\contentsline {subparagraph}{Security}{30}{section*.32}
+\contentsline {subparagraph}{Security}{31}{section*.32}
 \defcounter {refsection}{0}\relax 
 \contentsline {subparagraph}{Bruikbaarheid}{31}{section*.33}
 \defcounter {refsection}{0}\relax 
 \contentsline {subparagraph}{Stabiliteit}{31}{section*.34}
 \defcounter {refsection}{0}\relax 
-\contentsline {subparagraph}{Compatibiliteit}{31}{section*.35}
+\contentsline {subparagraph}{Compatibiliteit}{32}{section*.35}
 \defcounter {refsection}{0}\relax 
-\contentsline {subparagraph}{Modulair}{31}{section*.36}
+\contentsline {subparagraph}{Modulair}{32}{section*.36}
 \defcounter {refsection}{0}\relax 
 \contentsline {subparagraph}{Testing}{32}{section*.37}
 \defcounter {refsection}{0}\relax 
@@ -110,41 +110,41 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subparagraph}{First meaningfull paint}{32}{section*.38}
 \defcounter {refsection}{0}\relax 
-\contentsline {subparagraph}{Grootte}{32}{section*.39}
+\contentsline {subparagraph}{Grootte}{33}{section*.39}
 \defcounter {refsection}{0}\relax 
-\contentsline {subparagraph}{Tarief}{32}{section*.40}
+\contentsline {subparagraph}{Tarief}{33}{section*.40}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Methodologie}{33}{chapter.3}
+\contentsline {chapter}{\numberline {3}Methodologie}{35}{chapter.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}JavaScript frameworks vergelijking}{35}{chapter.4}
+\contentsline {chapter}{\numberline {4}JavaScript frameworks vergelijking}{37}{chapter.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Theoretische vergelijking}{35}{section.4.1}
+\contentsline {section}{\numberline {4.1}Theoretische vergelijking}{37}{section.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Praktische vergelijking}{36}{section.4.2}
+\contentsline {section}{\numberline {4.2}Praktische vergelijking}{38}{section.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.1}Grootte}{37}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.1}Grootte}{39}{subsection.4.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.2}First meaningfull paint}{38}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.2}First meaningfull paint}{40}{subsection.4.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.3}Tarief}{38}{subsection.4.2.3}
+\contentsline {subsection}{\numberline {4.2.3}Tarief}{40}{subsection.4.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Conclusie}{39}{chapter.5}
+\contentsline {chapter}{\numberline {5}Conclusie}{41}{chapter.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Onderzoeksvoorstel}{41}{appendix.A}
+\contentsline {chapter}{\numberline {A}Onderzoeksvoorstel}{43}{appendix.A}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.1}Introductie}{41}{section.A.1}
+\contentsline {section}{\numberline {A.1}Introductie}{43}{section.A.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.2}State-of-the-art}{42}{section.A.2}
+\contentsline {section}{\numberline {A.2}State-of-the-art}{44}{section.A.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.2.1}Wat zijn JavaScript frameworks?}{42}{subsection.A.2.1}
+\contentsline {subsection}{\numberline {A.2.1}Wat zijn JavaScript frameworks?}{44}{subsection.A.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.2.2}Gelijkaardige onderzoeken}{42}{subsection.A.2.2}
+\contentsline {subsection}{\numberline {A.2.2}Gelijkaardige onderzoeken}{44}{subsection.A.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.3}Methodologie}{42}{section.A.3}
+\contentsline {section}{\numberline {A.3}Methodologie}{44}{section.A.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.4}Verwachte resultaten}{42}{section.A.4}
+\contentsline {section}{\numberline {A.4}Verwachte resultaten}{44}{section.A.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.5}Verwachte conclusies}{43}{section.A.5}
+\contentsline {section}{\numberline {A.5}Verwachte conclusies}{45}{section.A.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliografie}{45}{appendix*.41}
+\contentsline {chapter}{Bibliografie}{47}{appendix*.41}
 \contentsfinish 

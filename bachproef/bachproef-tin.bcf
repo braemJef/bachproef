@@ -2302,34 +2302,39 @@
     <bcf:datasource type="file" datatype="bibtex">../voorstel/biblio.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1">github_front-end_????</bcf:citekey>
-    <bcf:citekey order="2">Introduction_2018</bcf:citekey>
-    <bcf:citekey order="3">clifton_what_2003</bcf:citekey>
-    <bcf:citekey order="4">eskelin_software_2001</bcf:citekey>
-    <bcf:citekey order="5">_benchmark_????</bcf:citekey>
-    <bcf:citekey order="6">atwood_understanding_2008</bcf:citekey>
-    <bcf:citekey order="7">_model-view-controller_2014</bcf:citekey>
-    <bcf:citekey order="8">github_front-end_????</bcf:citekey>
-    <bcf:citekey order="9">_angular_2018</bcf:citekey>
-    <bcf:citekey order="10">_angular_2018</bcf:citekey>
-    <bcf:citekey order="11">precht_thoughtram_2016</bcf:citekey>
-    <bcf:citekey order="12">koretskyi_angular_2017</bcf:citekey>
-    <bcf:citekey order="13">_vue_2018</bcf:citekey>
-    <bcf:citekey order="14">_vue_2018-1</bcf:citekey>
-    <bcf:citekey order="15">mikami_medium_2017</bcf:citekey>
-    <bcf:citekey order="16">_react_2018</bcf:citekey>
-    <bcf:citekey order="17">_react_2018</bcf:citekey>
-    <bcf:citekey order="18">mishra_hackernoon_2017</bcf:citekey>
-    <bcf:citekey order="19">kurian_medium_2017</bcf:citekey>
-    <bcf:citekey order="20">github_front-end_????</bcf:citekey>
-    <bcf:citekey order="21">_angular_2018-1</bcf:citekey>
-    <bcf:citekey order="22">_angular_2018-1</bcf:citekey>
-    <bcf:citekey order="23">_made_????</bcf:citekey>
-    <bcf:citekey order="24">_made_????-1</bcf:citekey>
-    <bcf:citekey order="25">_testing_2018</bcf:citekey>
-    <bcf:citekey order="26">_testing_2018-2</bcf:citekey>
-    <bcf:citekey order="27">_testing_2018-1</bcf:citekey>
-    <bcf:citekey order="28">javascriptframework</bcf:citekey>
+    <bcf:citekey order="9">github_front-end_????</bcf:citekey>
+    <bcf:citekey order="10">Introduction_2018</bcf:citekey>
+    <bcf:citekey order="11">clifton_what_2003</bcf:citekey>
+    <bcf:citekey order="12">eskelin_software_2001</bcf:citekey>
+    <bcf:citekey order="13">_benchmark_????</bcf:citekey>
+    <bcf:citekey order="14">atwood_understanding_2008</bcf:citekey>
+    <bcf:citekey order="15">_model-view-controller_2014</bcf:citekey>
+    <bcf:citekey order="16">github_front-end_????</bcf:citekey>
+    <bcf:citekey order="17">_angular_2018</bcf:citekey>
+    <bcf:citekey order="18">_angular_2018</bcf:citekey>
+    <bcf:citekey order="19">precht_thoughtram_2016</bcf:citekey>
+    <bcf:citekey order="20">koretskyi_angular_2017</bcf:citekey>
+    <bcf:citekey order="21">_vue_2018</bcf:citekey>
+    <bcf:citekey order="22">_vue_2018-1</bcf:citekey>
+    <bcf:citekey order="23">mikami_medium_2017</bcf:citekey>
+    <bcf:citekey order="24">_react_2018</bcf:citekey>
+    <bcf:citekey order="25">_react_2018</bcf:citekey>
+    <bcf:citekey order="26">mishra_hackernoon_2017</bcf:citekey>
+    <bcf:citekey order="27">kurian_medium_2017</bcf:citekey>
+    <bcf:citekey order="28">_data_????</bcf:citekey>
+    <bcf:citekey order="29">_data_????</bcf:citekey>
+    <bcf:citekey order="30">github_front-end_????</bcf:citekey>
+    <bcf:citekey order="31">_angular_2018-1</bcf:citekey>
+    <bcf:citekey order="32">_angular_2018-1</bcf:citekey>
+    <bcf:citekey order="33">_made_????</bcf:citekey>
+    <bcf:citekey order="34">_made_????-1</bcf:citekey>
+    <bcf:citekey order="35">_testing_2018</bcf:citekey>
+    <bcf:citekey order="36">_testing_2018-2</bcf:citekey>
+    <bcf:citekey order="37">_testing_2018-1</bcf:citekey>
+    <bcf:citekey order="38">_google_2012</bcf:citekey>
+    <bcf:citekey order="39">_stackoverflow_2009</bcf:citekey>
+    <bcf:citekey order="40">_stackoverflow_2009</bcf:citekey>
+    <bcf:citekey order="41">javascriptframework</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" name="apa/global/" type="entry" sortscheme="apa" sortnamekeyscheme="global" labelprefix="">
   <bcf:sorting>

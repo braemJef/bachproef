@@ -192,27 +192,17 @@ Alle informatie over de basisprincipes in Vue komt uit de officiële Vue documen
 \label{sec:Vue_Component}
 In Vue is een component conceptueel hetzelfde als in Angular. Dit concept zullen we zien bij elke framework en is ook de grootste gelijkenis tussen alle frameworks. Vue beschrijft zelf zijn components als een abstractie dat ons de mogelijkheid geeft om grootschalige applicaties te bouwen. Deze kunnen dan bestaan uit kleine zelf onderhouden en meestal herbruikbare components. De meeste interfaces kunnen geabstraheerd worden in een boom van components.
 
-Een component in Vue is in principe een Vue instantie met vooraf gedefinieerde opties. Een component wordt met behulp van het volgende stuk code gemaakt.
+Een component in Vue is in principe een Vue instantie met vooraf gedefinieerde opties. Een component wordt met behulp van onderstaand fragment gemaakt.
 
-\begin{verbatim}
-Vue.component(‘component-naam’, {
-	Template: ‘<p>Dit is een basis component</p>’
-})
-\end{verbatim}
+\codefragment{code/VueComponent.js}{Vue component voorbeeld}
 
 Deze component kunnen we nu gaan gebruiken in een andere component zijn template. Dit doen we door de component gewoon in de HTML te stoppen. Dit kunnen we vergelijken met de HTML template uit Angular.
 
-\begin{verbatim}
-<div>
-  <component-naam />
-</div>
-\end{verbatim}
+\codefragment{code/VueComponentTemplate.html}{Vue component template voorbeeld}
 
 Net zoals bij angular kunnen we met de component template gaan data binden. In vue kunnen we dit met de volgende syntax.
 
-\begin{verbatim}
-<p> {{ variable }} </p>
-\end{verbatim}
+\codefragment{code/vueComponentDatabinding.js}{Vue datat binding in template voorbeeld}
 
 Alles binnen deze haakjes zal als een string worden geïnterpreteerd. Er is maar 1 expressie toegestaan binnen de haakjes. 
 
@@ -265,47 +255,17 @@ Alle informatie over de basisprincipes in React komt uit de officiële React doc
 \label{sec:React_Component}
 In React is het mogelijk op een component op verschillende manieren te declareren. De belangrijkste manier is de React.Component klasse. In dit geval is de component een klasse die React.Component zal overerven.
 
-\begin{verbatim}.
-class Component extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {}
-  }  
-  render() {
-    return (<p>Dit is een component.</p>);
-  }
-}
-\end{verbatim}
+\codefragment{code/ReactComponent.js}{React component voorbeeld}
 
 Een component als deze heeft minstens één methode namelijk ‘render()’. Deze methode geeft een descriptie van wat je wilt renderen. Dit noemen we een React element. Een React element is een uitleg van wat je wil weergeven op het scherm. De syntax van de ‘render()’ methode lijkt enorm op HTML maar is eigenlijk een syntax genaamd JSX. React zorgt ervoor dat de component correct kan weergegeven worden in de browser wanneer er data aangepast wordt.
 
 De tweede methode om componenten te maken noemen we functional components. Deze syntax is korter wat wilt zeggen ook eenvoudiger. In plaats van een klasse te declareren die ‘React.Component’ extend kunnen we ook een functie schrijven die teruggeeft wat we willen renderen.
 
-\begin{verbatim}
-function FunctionalComponent(props) {
-	return (
-	<p>Dit is een functionele component.</p>
-	);
-}
-\end{verbatim}
+\codefragment{code/ReactFunctionalComponent.js}{React functional component voorbeeld}
 
 Nu de twee methoden uitgelegd zijn om een component aan te maken wordt er meer uitleg gegeven over wat een component inhoud. Elke component heeft een ‘props’ parameter. Via de props kan data doorgegeven worden aan child components. Props worden doorgegeven in de JSX syntax in de render.
 
-\begin{verbatim}
-class Parent extends React.Component {
-	render() {
-		return (
-		<Child value={‘This is a message from the parent component.’} />
-		);
-	}
-}
-
-function Child(props) {
-	return (
-	<p>{props.value}</p> // => <p>This is a message from the parent component.</p>
-	);
-}
-\end{verbatim}
+\codefragment{code/ReactChildComponent.js}{React parent met child component voorbeeld}
 
 Elke React component heeft ook een state. Als de state van een component aanpast zal React de components proberen re-renderen. React zal dit enkel en alleen doen indien dit nodig is voor de gebruiker.
 
@@ -325,13 +285,27 @@ Het moment waarop de Virtual DOM heropgebouwd word zal React kijken of het vorig
 \label{sec:Data_Binding}
 Elk framework gebruikt het concept data bindings. Er bestaan 2 types data binding. One-way data binding en two-way data binding.
 
-Traditionele server-side web applicaties maken gebruik van one-way data binding. Hier word een template en data modellen samengevoegd en verzonden naar de gebruiker zijn browser. Alle aanpassingen die gemaakt worden moeten dus via de server gebeuren en er zal een nieuwe view verstuurd moeten worden naar de browser.
+Traditionele server-side web applicaties maken gebruik van one-way data binding. Hier word een template en data modellen samengevoegd en verzonden naar de gebruiker zijn browser. Alle aanpassingen die gemaakt worden moeten dus via de server gebeuren en er zal een nieuwe view verstuurd moeten worden naar de browser. One-way data binding is voorgesteld met behulp van een schema in figuur \ref{fig:one_way_data_binding}
 
-De meest gebruikte methode van data binding in JavaScript Frameworks is two-way data binding. De view is hierbij een directe projectie van het model. Dit betekend dat alle aanpassingen door de gebruiker meteen aangepast worden in het model en omgekeerd worden ook alle aanpassingen in het model meteen zichtbaar in de view.
+\begin{figure}[h!]
+	\caption{One-way data binding \autocite{_data_????}}
+	\centering
+	\includegraphics[width=7cm]{img/onewaydatabinding.png}
+	\label{fig:one_way_data_binding}
+\end{figure}
+
+De meest gebruikte methode van data binding in JavaScript Frameworks is two-way data binding. De view is hierbij een directe projectie van het model. Dit betekend dat alle aanpassingen door de gebruiker meteen aangepast worden in het model en omgekeerd worden ook alle aanpassingen in het model meteen zichtbaar in de view. Two-way data binding is voorgesteld met behulp van een schema in figuur \ref{fig:two_way_data_binding}
+
+\begin{figure}[h!]
+	\caption{Two-way data binding \autocite{_data_????}}
+	\centering
+	\includegraphics[width=7cm]{img/twowaydatabinding.png}
+	\label{fig:two_way_data_binding}
+\end{figure}
 
 \subsection{Application state}
 \label{sec:Application_state}
-De state van een applicatie is de plek waar data vandaan komt. Om een web applicatie interactiever te maken zijn er meer states nodig. Bij server side rendering of one-way data binding is het moeilijker om kleine aanpassingen te maken. Dit is bij web applicaties die gebouwd zijn met JavaScript frameworks makkelijker te implementeren. Hierdoor hebben zo’n web applicaties meestal een complexere state. De state van een applicatie kan op verschillende manieren aangepast worden:
+De state van een applicatie is de plek waar data vandaan komt. Om een webapplicatie interactiever te maken zijn er meer states nodig. Bij server side rendering of one-way data binding is het moeilijker om kleine aanpassingen te maken. Dit is bij webapplicaties die gebouwd zijn met JavaScript frameworks makkelijker te implementeren. Hierdoor hebben zo’n webapplicaties meestal een complexere state. De state van een applicatie kan op verschillende manieren aangepast worden:
 
 \begin{itemize}
 	\item I/O in forms, fields kunnen gevalideerd worden.

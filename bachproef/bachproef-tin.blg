@@ -1,20 +1,20 @@
 [0] Config.pm:354> INFO - This is Biber 2.7
 [0] Config.pm:357> INFO - Logfile is 'bachproef-tin.blg'
-[61] biber-darwin:303> INFO - === Thu May 24, 2018, 01:19:42
-[104] Biber.pm:359> INFO - Reading 'bachproef-tin.bcf'
-[226] Biber.pm:835> INFO - Found 23 citekeys in bib section 0
-[243] Biber.pm:3670> INFO - Processing section 0
-[265] Biber.pm:3840> INFO - Looking for bibtex format file 'bachproef-tin.bib' for section 0
-[270] bibtex.pm:1435> INFO - Decoding LaTeX character macros into UTF-8
-[281] bibtex.pm:1292> INFO - Found BibTeX data source 'bachproef-tin.bib'
-[321] Biber.pm:3840> INFO - Looking for bibtex format file '../voorstel/biblio.bib' for section 0
-[324] bibtex.pm:1435> INFO - Decoding LaTeX character macros into UTF-8
-[325] bibtex.pm:1292> INFO - Found BibTeX data source '../voorstel/biblio.bib'
-[328] Utils.pm:164> WARN - I didn't find a database entry for 'Introduction_2018' (section 0)
-[368] UCollate.pm:68> INFO - Overriding locale 'nl-NL' defaults 'variable = shifted' with 'variable = non-ignorable'
-[368] UCollate.pm:68> INFO - Overriding locale 'nl-NL' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[369] Biber.pm:3499> INFO - Sorting list 'apa/global/' of type 'entry' with scheme 'apa' and locale 'nl-NL'
-[369] Biber.pm:3505> INFO - No sort tailoring available for locale 'nl-NL'
-[387] bbl.pm:608> INFO - Writing 'bachproef-tin.bbl' with encoding 'UTF-8'
-[390] bbl.pm:712> INFO - Output to bachproef-tin.bbl
-[391] Biber.pm:109> INFO - WARNINGS: 1
+[51] biber-darwin:303> INFO - === Thu May 24, 2018, 22:47:12
+[76] Biber.pm:359> INFO - Reading 'bachproef-tin.bcf'
+[220] Biber.pm:835> INFO - Found 26 citekeys in bib section 0
+[237] Biber.pm:3670> INFO - Processing section 0
+[251] Biber.pm:3840> INFO - Looking for bibtex format file 'bachproef-tin.bib' for section 0
+[255] bibtex.pm:1435> INFO - Decoding LaTeX character macros into UTF-8
+[262] bibtex.pm:1292> INFO - Found BibTeX data source 'bachproef-tin.bib'
+[301] Biber.pm:3840> INFO - Looking for bibtex format file '../voorstel/biblio.bib' for section 0
+[303] bibtex.pm:1435> INFO - Decoding LaTeX character macros into UTF-8
+[304] bibtex.pm:1292> INFO - Found BibTeX data source '../voorstel/biblio.bib'
+[308] Utils.pm:164> WARN - I didn't find a database entry for 'Introduction_2018' (section 0)
+[344] UCollate.pm:68> INFO - Overriding locale 'nl-NL' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[344] UCollate.pm:68> INFO - Overriding locale 'nl-NL' defaults 'variable = shifted' with 'variable = non-ignorable'
+[344] Biber.pm:3499> INFO - Sorting list 'apa/global/' of type 'entry' with scheme 'apa' and locale 'nl-NL'
+[344] Biber.pm:3505> INFO - No sort tailoring available for locale 'nl-NL'
+[363] bbl.pm:608> INFO - Writing 'bachproef-tin.bbl' with encoding 'UTF-8'
+[367] bbl.pm:712> INFO - Output to bachproef-tin.bbl
+[368] Biber.pm:109> INFO - WARNINGS: 1

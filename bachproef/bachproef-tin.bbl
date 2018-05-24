@@ -137,6 +137,17 @@
       \verb https://www.codeproject.com/Articles/5381/What-Is-A-Framework
       \endverb
     \endentry
+    \entry{_data_????}{online}{}
+      \field{sortinit}{D}
+      \field{sortinithash}{d10b5413de1f3d197b20897dd0d565bb}
+      \field{labeldatesource}{nodate}
+      \field{labeltitlesource}{title}
+      \field{title}{Data binding}
+      \field{titleaddon}{Data binding}
+      \verb{url}
+      \verb https://www.javatpoint.com/angularjs-data-binding
+      \endverb
+    \endentry
     \entry{eskelin_software_2001}{online}{}
       \name{author}{1}{}{%
         {{uniquename=0,hash=f7626e4cf0ddc300ec039e752ecca3d1}{%
@@ -187,6 +198,18 @@
       \field{titleaddon}{Front-end {JavaScript} frameworks}
       \verb{url}
       \verb https://github.com/collections/front-end-javascript-frameworks
+      \endverb
+    \endentry
+    \entry{_google_2012}{online}{}
+      \field{sortinit}{G}
+      \field{sortinithash}{618d986594b7198ba52cf8b00d348f3f}
+      \field{labeldatesource}{}
+      \field{labeltitlesource}{title}
+      \field{title}{Google Trends}
+      \field{year}{2012}
+      \field{dateera}{ce}
+      \verb{url}
+      \verb https://trends.google.com/trends/explore?cat=31&date=all&q=Angular,VueJs,React
       \endverb
     \endentry
     \entry{koretskyi_angular_2017}{online}{}
@@ -384,6 +407,19 @@
       \field{dateera}{ce}
       \verb{url}
       \verb https://reactjs.org/docs/
+      \endverb
+    \endentry
+    \entry{_stackoverflow_2009}{online}{}
+      \field{sortinit}{s}
+      \field{sortinithash}{3c1547c63380458f8ca90e40ed14b83e}
+      \field{labeldatesource}{}
+      \field{labeltitlesource}{title}
+      \field{title}{stackoverflow trends}
+      \field{titleaddon}{stackoverflow trends}
+      \field{year}{2009}
+      \field{dateera}{ce}
+      \verb{url}
+      \verb https://insights.stackoverflow.com/trends?tags=vue.js%2Creactjs%2Cangular
       \endverb
     \endentry
     \entry{_testing_2018}{online}{}
