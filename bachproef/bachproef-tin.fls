@@ -363,12 +363,9 @@ INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/avantgar/pagk8r.tfm
 OUTPUT bachproef-tin.toc
 INPUT bachproef-tin.lof
 INPUT bachproef-tin.lof
-INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/times/ptmb8t.tfm
 OUTPUT bachproef-tin.lof
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/vf/adobe/avantgar/pagk8t.vf
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/avantgar/pagk8r.tfm
-INPUT /usr/local/texlive/2017/texmf-dist/fonts/vf/adobe/times/ptmb8t.vf
-INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/times/ptmb8r.tfm
 INPUT bachproef-tin.lot
 INPUT bachproef-tin.lot
 OUTPUT bachproef-tin.lot
@@ -379,6 +376,9 @@ INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/omsptm.fd
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
 INPUT standvanzaken.tex
 INPUT standvanzaken.tex
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/times/ptmb8t.tfm
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/vf/adobe/times/ptmb8t.vf
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/times/ptmb8r.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/times/ptmr8t.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/avantgar/pagd8t.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/vf/adobe/avantgar/pagd8t.vf

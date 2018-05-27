@@ -228,6 +228,18 @@
       \verb https://github.com/collections/front-end-javascript-frameworks
       \endverb
     \endentry
+    \entry{_google_2018}{online}{}
+      \field{sortinit}{G}
+      \field{sortinithash}{618d986594b7198ba52cf8b00d348f3f}
+      \field{labeldatesource}{}
+      \field{labeltitlesource}{title}
+      \field{title}{Google Trends}
+      \field{year}{2018}
+      \field{dateera}{ce}
+      \verb{url}
+      \verb https://trends.google.com/trends/explore?cat=31&date=all&q=Angular,VueJs,React
+      \endverb
+    \endentry
     \entry{koretskyi_angular_2017}{online}{}
       \name{author}{1}{}{%
         {{uniquename=0,hash=2b546c4cb16335e3bf1bc8fd131a8556}{%
@@ -425,6 +437,19 @@
       \verb https://reactjs.org/docs/
       \endverb
     \endentry
+    \entry{_stackoverflow_2018}{online}{}
+      \field{sortinit}{s}
+      \field{sortinithash}{3c1547c63380458f8ca90e40ed14b83e}
+      \field{labeldatesource}{}
+      \field{labeltitlesource}{title}
+      \field{title}{stackoverflow trends}
+      \field{titleaddon}{stackoverflow trends}
+      \field{year}{2018}
+      \field{dateera}{ce}
+      \verb{url}
+      \verb https://insights.stackoverflow.com/trends?tags=vue.js%2Creactjs%2Cangular
+      \endverb
+    \endentry
     \entry{_testing_2018}{online}{}
       \field{sortinit}{T}
       \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
@@ -495,8 +520,6 @@
     \endentry
   \endsortlist
   \missing{Introduction_2018}
-  \missing{_stackoverflow_2009}
-  \missing{_google_2012}
 \endrefsection
 \endinput
 
