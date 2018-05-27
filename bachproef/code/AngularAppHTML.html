@@ -1,0 +1,6 @@
+<div class="App">
+  <input #todoinput type="text" class="todoInput new-todo" placeholder="Write your todo here..." (keyup.enter)="addTodo(todoinput)">
+  <span *ngFor="let todo of todos">
+      <app-todo [todo]="todo"></app-todo>
+  </span>
+</div>

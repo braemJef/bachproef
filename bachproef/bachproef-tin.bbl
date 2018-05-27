@@ -76,6 +76,34 @@
       \verb https://blog.codinghorror.com/understanding-model-view-controller/
       \endverb
     \endentry
+    \entry{bain_lucybain_2017}{online}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=8868a95e5eb548d518cb0281dea85f24}{%
+           family={Bain},
+           familyi={B\bibinitperiod},
+           given={Lucy},
+           giveni={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{8868a95e5eb548d518cb0281dea85f24}
+      \strng{fullhash}{8868a95e5eb548d518cb0281dea85f24}
+      \strng{authornamehash}{8868a95e5eb548d518cb0281dea85f24}
+      \strng{authorfullhash}{8868a95e5eb548d518cb0281dea85f24}
+      \field{sortinit}{B}
+      \field{sortinithash}{5f6fa000f686ee5b41be67ba6ff7962d}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{8}
+      \field{month}{2}
+      \field{title}{Lucybain}
+      \field{titleaddon}{How does React decide to re-render a component?}
+      \field{year}{2017}
+      \field{dateera}{ce}
+      \verb{url}
+      \verb http://lucybain.com/blog/2017/react-js-when-to-rerender/
+      \endverb
+    \endentry
     \entry{_benchmark_????}{inreference}{}
       \field{sortinit}{B}
       \field{sortinithash}{5f6fa000f686ee5b41be67ba6ff7962d}
@@ -198,18 +226,6 @@
       \field{titleaddon}{Front-end {JavaScript} frameworks}
       \verb{url}
       \verb https://github.com/collections/front-end-javascript-frameworks
-      \endverb
-    \endentry
-    \entry{_google_2012}{online}{}
-      \field{sortinit}{G}
-      \field{sortinithash}{618d986594b7198ba52cf8b00d348f3f}
-      \field{labeldatesource}{}
-      \field{labeltitlesource}{title}
-      \field{title}{Google Trends}
-      \field{year}{2012}
-      \field{dateera}{ce}
-      \verb{url}
-      \verb https://trends.google.com/trends/explore?cat=31&date=all&q=Angular,VueJs,React
       \endverb
     \endentry
     \entry{koretskyi_angular_2017}{online}{}
@@ -409,19 +425,6 @@
       \verb https://reactjs.org/docs/
       \endverb
     \endentry
-    \entry{_stackoverflow_2009}{online}{}
-      \field{sortinit}{s}
-      \field{sortinithash}{3c1547c63380458f8ca90e40ed14b83e}
-      \field{labeldatesource}{}
-      \field{labeltitlesource}{title}
-      \field{title}{stackoverflow trends}
-      \field{titleaddon}{stackoverflow trends}
-      \field{year}{2009}
-      \field{dateera}{ce}
-      \verb{url}
-      \verb https://insights.stackoverflow.com/trends?tags=vue.js%2Creactjs%2Cangular
-      \endverb
-    \endentry
     \entry{_testing_2018}{online}{}
       \field{sortinit}{T}
       \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
@@ -492,6 +495,8 @@
     \endentry
   \endsortlist
   \missing{Introduction_2018}
+  \missing{_stackoverflow_2009}
+  \missing{_google_2012}
 \endrefsection
 \endinput
 

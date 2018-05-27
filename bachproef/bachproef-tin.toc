@@ -122,29 +122,47 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.2}Praktische vergelijking}{38}{section.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.1}Grootte}{39}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.1}Grootte}{40}{subsection.4.2.1}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.2.2}First meaningfull paint}{40}{subsection.4.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.3}Tarief}{40}{subsection.4.2.3}
+\contentsline {subsection}{\numberline {4.2.3}Tarief}{41}{subsection.4.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Conclusie}{41}{chapter.5}
+\contentsline {subsubsection}{Benchmark script}{41}{section*.41}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Onderzoeksvoorstel}{43}{appendix.A}
+\contentsline {subsubsection}{Resultaten}{44}{section*.42}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.1}Introductie}{43}{section.A.1}
+\contentsline {chapter}{\numberline {5}Conclusie}{47}{chapter.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.2}State-of-the-art}{44}{section.A.2}
+\contentsline {chapter}{\numberline {A}Onderzoeksvoorstel}{49}{appendix.A}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.2.1}Wat zijn JavaScript frameworks?}{44}{subsection.A.2.1}
+\contentsline {section}{\numberline {A.1}Introductie}{49}{section.A.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.2.2}Gelijkaardige onderzoeken}{44}{subsection.A.2.2}
+\contentsline {section}{\numberline {A.2}State-of-the-art}{50}{section.A.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.3}Methodologie}{44}{section.A.3}
+\contentsline {subsection}{\numberline {A.2.1}Wat zijn JavaScript frameworks?}{50}{subsection.A.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.4}Verwachte resultaten}{44}{section.A.4}
+\contentsline {subsection}{\numberline {A.2.2}Gelijkaardige onderzoeken}{50}{subsection.A.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.5}Verwachte conclusies}{45}{section.A.5}
+\contentsline {section}{\numberline {A.3}Methodologie}{50}{section.A.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliografie}{47}{appendix*.41}
+\contentsline {section}{\numberline {A.4}Verwachte resultaten}{50}{section.A.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.5}Verwachte conclusies}{51}{section.A.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {B}Applicaties}{53}{appendix.B}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {B.1}Angular}{53}{section.B.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {B.2}Vue}{54}{section.B.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {B.3}React}{56}{section.B.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {C}Benchmark}{59}{appendix.C}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {C.1}Script}{59}{section.C.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {C.2}Resultaten}{65}{section.C.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Bibliografie}{71}{appendix*.43}
 \contentsfinish 

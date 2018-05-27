@@ -87,6 +87,8 @@ Om alle tests zo eerlijk en correct mogelijk te laten verlopen zullen we onze om
 
 Bij elke test zullen alle mogelijke processen op de pc gestopt worden behalve de browser.
 
+Alle tests worden natuurlijk uitgevoerd op dezelfde applicaties. De code van deze applicaties is te vinden in bijlage \ref{ch:applicaties}.
+
 \subsection{Grootte}
 \label{sec:grootte}
 
@@ -128,6 +130,121 @@ In tabel \ref{table:first_meaningfull_paint} zien we dat Vue en React weer zeer 
 \subsection{Tarief}
 \label{sec:tarief}
 
+In dit onderdeel zullen we het tarief meten van elk framework. Hiervoor zijn zelf benchmark tests gemaakt die de tijd zullen meten op een bepaald aantal elementen in te laden. We gaan dit meten voor 100, 500 en 1000 elementen. Hieruit gaan we dan concluderen of er een bepaald framework sneller is dan een ander en waarom. Ten eerste zal de code van de benchmarks besproken worden.
+
+\subsubsection{Benchmark script}
+\label{sec:benchmark_script}
+
+De hele benchmark pagina bestaat uit twee delen. De linkerzijde bevat de lijst met benchmarks en resultaten. Rechts is er een iFrame waarin de webapplicaties met verschillende frameworks één voor één ingeladen kunnen worden. De hele interface is te zien in figuur \ref{fig:benchmark_empty} en figuur \ref{fig:benchmark_completed}.
+
+
+\begin{figure}[h!]
+	\caption{Benchmark interface voor de tests}
+	\centering
+	\includegraphics[width=0.8\textwidth]{benchmarksInitial.png}
+	\label{fig:benchmark_empty}
+\end{figure}
+\begin{figure}[h!]
+	\caption{Benchmark interface met resultaten}
+	\centering
+	\includegraphics[width=0.8\textwidth]{benchmarksCompleted.png}
+	\label{fig:benchmark_completed}
+\end{figure}
+
+Het script bestaat uit verschillende delen. Ten eerste is er een array waar de test in beschreven worden. Hierin staat voor welk framework het is, de naam en hoeveel items de test moet toevoegen. Hiernaast ook nog enkele veriabelen die nodig zijn om tijd te berekenen. Een voorbeeld van zo een test kan je zien in listing 4.1. Het volledige script is bijgevoegd in de bijlage \ref{ch:benchmark}.
+
+\codefragment{code/BenchmarkTests.js}{Array dat tests definieert}
+
+Om een test te starten zal de start methode eerst opgeroepen worden. Dit zorgt ervoor dat er in de iFrame een methode geïntjecteerd word die de applicatie kan oproepen. De start methode kan je zien in listing 4.2.
+
+\codefragment{code/BenchmarkStart.js}{Start methode}
+
+Zoals te zien is zal de start methode op het einde de next methode oproepen van de test (Listing 4.3). Deze next methode zal ervoor zorgen dat er een tekst in de input field geplaatst wordt. Hierna zal de timer starten om de tijd te meten. Vlak na dat de timer start zal een tweede timer gezet worden om te meten hoe lang het duurt om de timer te starten en te stoppen. Dit zullen we gebruiken om de nauwkeurigheid hiervant te meten. Het script zal dan simuleren dat de enter toets ingedrukt wordt. De applicatie zal dit opvangen en het renderen gaat van start. Als het renderen gedaan is zal in de correcte lifecycle hook de functie opgeroepen worden die we eerder in de iFrame geïnjecteerd hebben. Nu heeft de applicatie gesignaleerd aan ons benchmark script dat het renderen klaar is. Ten slotte stopt de timer en zal next terug opgeroepen worden. Deze sequentie zal opgeroepen worden tot het volledige aantal elementen toegevoegd zijn. De next methode zal dit merken en de finish methode zal opgeroepen worden (Listing 4.4). Deze berekend alle nodige waarden en ten slotte zal de volgende test van start gaan.
+
+\codefragment{code/BenchmarkNext.js}{Next methode}
+
+\codefragment{code/BenchmarkFinish.js}{Finish methode}
+
+Dit hele process werkt met veel asynchrone processen en kan dus niet gewoon sequentieel behandeld worden. Om de iteraties en tests in de juiste volgorde te laten verlopen wordt er gebruik gemaakt van generator functions. Deze zijn te zien in listing 4.5. Deze functies staan in om de iFrame te herladen en alle resultaten op te slaan in de localStorage.
+
+\codefragment{code/BenchmarkGenerators.js}{Iteratie generator en test generator}
+
+\subsubsection{Resultaten}
+\label{sec:resultaten_benchmarks}
+
+In dit onderdeel zullen de resultaten enkel in beknopte vorm weergegeven worden. Een complete set van alle individuele resultaten is te vinden in de bijlage \ref{resultaten}.
+
+Ten eerste zal ik alle resultaten van de drie tests weergeven in tabelvorm. Hierna zal ik meer duidelijkheid proberen scheppen door ze in geschikte grafieken weer te geven.
+
+\begin{table}[h]
+	\centering
+	\caption{Resultaten 100 elementen inladen in milliseconden}
+	\label{table:resultaten_100_elementen}
+	\begin{tabular}{|c|c|c|c|} \hline
+		                           &Angular     &Vue        &React      \\ \hline
+		gemiddelde			&63.685     &100.755  &47.173 \\ \hline
+		minimuum			&59.400     &83.800  &44.900 \\ \hline
+		maximuum			&69.900    &111.900  &51.800 \\ \hline
+		mediaan				   &63.500    &101.200  &47.100 \\ \hline
+		standaarddeviatie &1.965        &5.078    &1.256    \\ \hline
+	\end{tabular}
+\end{table}
+
+\begin{table}[h]
+	\centering
+	\caption{Resultaten 500 elementen inladen in milliseconden}
+	\label{table:resultaten_500_elementen}
+	\begin{tabular}{|c|c|c|c|} \hline
+								   &Angular     &Vue        &React      \\ \hline
+		gemiddelde			&426.149     &701.206  &239.316 \\ \hline
+		minimuum			&404.600    &626.500  &226.600 \\ \hline
+		maximuum			&456.000    &774.700  &251.700 \\ \hline
+		mediaan				   &424.300    &702.700  &239.150 \\ \hline
+		standaarddeviatie &9.380       &28.027    &4.666    \\ \hline
+	\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\centering
+\caption{Resultaten 1000 elementen inladen in milliseconden}
+\label{table:resultaten_1000_elementen}
+\begin{tabular}{|c|c|c|c|} \hline
+		   						&Angular     &Vue        &React      \\ \hline
+	gemiddelde			&1370.683     &2305.653  &682.043 \\ \hline
+	minimuum			&1315.300    &2135.800  &660.700 \\ \hline
+	maximuum			&1467.400    &2859.400  &725.300 \\ \hline
+	mediaan				   &1363.000    &2285.150  &680.150 \\ \hline
+	standaarddeviatie &33.224       &110.786    &12.969    \\ \hline
+\end{tabular}
+\end{table}
+
+\begin{figure}[h!]
+	\caption{Benchmark interface met resultaten}
+	\centering
+	\includegraphics[width=0.6\textwidth]{Add100Items.png}
+	\label{fig:resultaten_100_elementen}
+\end{figure}
+\begin{figure}[h!]
+	\caption{Benchmark interface met resultaten}
+	\centering
+	\includegraphics[width=0.6\textwidth]{Add500Items.png}
+	\label{fig:resultaten_500_elementen}
+\end{figure}
+\begin{figure}[h!]
+	\caption{Benchmark interface met resultaten}
+	\centering
+	\includegraphics[width=0.6\textwidth]{Add1000Items.png}
+	\label{fig:resultaten_1000_elementen}
+\end{figure}
+
+Met deze informatie is er één framework dat er ver bovenuitsteekt. React is namelijk veel sneller in alles. Ook is de standaard afwijking zeer miniem. Dit betekend dat React een zeer stabiel framework is. Als we verderkijken naar figuur \ref{fig:resultatenen_gemiddelden} zien we nog een belangrijke trend. Alle resultaten bij welk framework dan ook zijn niet recht evenredig. Hoe meer elementen een framework moet renderen hoe langer dit duurt. De relatie tussen de tijd en het aantal elementen is exponentieel. 
+
+\begin{figure}[h!]
+	\caption{Gemiddelden in staafdiagram ten opzichte van elkaar}
+	\centering
+	\includegraphics[width=0.6\textwidth]{Gemiddelden.png}
+	\label{fig:resultaten_gemiddelden}
+\end{figure}
 
 
 
